@@ -4,6 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>薅羊毛情报站 — 只收录官方可验证的免费羊毛</title>
+<meta name="description" content="只收录官方可验证的免费羊毛：免费 Pro、免费域名、AI 免费额度、大云试用金、免费 eSIM、学生福利、免费服务器，每天核验更新。">
+<meta property="og:title" content="薅羊毛情报站 — 只收录官方可验证的免费羊毛">
+<meta property="og:description" content="免费 Pro、免费域名、AI 免费额度、大云试用金、免费 eSIM、学生福利、免费服务器，每天核验更新。">
+<meta property="og:type" content="website">
 <style>
   * { box-sizing: border-box; }
   body { font-family: -apple-system, "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif; margin: 0; background: #f6f7f9; color: #222; line-height: 1.6; }
@@ -39,6 +43,33 @@
   .video-card strong { font-size: 14px; display: block; margin-bottom: 4px; }
   @media (max-width: 600px) { .videos { grid-template-columns: 1fr; } }
   footer { text-align: center; color: #9ca3af; font-size: 13px; padding: 0 16px 32px; }
+  nav { overflow-x: auto; white-space: nowrap; scrollbar-width: none; }
+  nav::-webkit-scrollbar { display: none; }
+  .hero-sub { max-width: 640px; margin: 8px auto 0; }
+  .btn-channel { display: inline-block; background: #ef4444; color: #fff; padding: 8px 20px; border-radius: 20px; font-size: 14px; margin-top: 12px; font-weight: 600; }
+  .btn-channel:hover { text-decoration: none; background: #dc2626; color: #fff; }
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 10px; margin-bottom: 16px; }
+  .stat { background: #fff; border-radius: 12px; padding: 14px 10px 12px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,.06); border-top: 3px solid var(--c, #64748b); display: block; color: #222; transition: transform .15s, box-shadow .15s; }
+  .stat:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,.10); text-decoration: none; }
+  .stat b { font-size: 26px; display: block; line-height: 1.2; }
+  .stat span { font-size: 12px; color: #6b7280; }
+  .stat.total { background: #111827; color: #fff; border-top-color: #f59e0b; }
+  .stat.total span { color: #cbd5e1; }
+  .search-wrap { margin-bottom: 16px; }
+  .search-wrap input { width: 100%; padding: 11px 14px; border: 1px solid #e5e7eb; border-radius: 10px; font-size: 15px; background: #fff; }
+  .search-wrap input:focus { outline: none; border-color: #2563eb; }
+  section { border-top: 3px solid var(--c, #e5e7eb); transition: box-shadow .15s; }
+  section:hover { box-shadow: 0 4px 14px rgba(0,0,0,.08); }
+  .cat-pro { --c: #f59e0b; } .cat-domain { --c: #3b82f6; } .cat-ai { --c: #8b5cf6; } .cat-cloud { --c: #0ea5e9; } .cat-esim { --c: #22c55e; } .cat-student { --c: #ec4899; } .cat-server { --c: #64748b; } .cat-videos { --c: #ef4444; } .cat-archive { --c: #9ca3af; }
+  tr:hover { background: #f9fafb; }
+  #noresult { display: none; text-align: center; color: #6b7280; padding: 24px; background: #fff; border-radius: 12px; }
+  @media (max-width: 600px) {
+    header h1 { font-size: 24px; }
+    header { padding: 28px 16px 22px; }
+    th, td { padding: 6px 8px; font-size: 13px; }
+    .stat b { font-size: 22px; }
+    section { padding: 14px 14px; }
+  }
 </style>
 </head>
 <body>
@@ -46,14 +77,29 @@
   <h1>🐑 薅羊毛情报站</h1>
   <p>只收录官方可验证的免费羊毛 · 每天核验更新</p>
   <p>每条都链向官网，红字是限制，领之前先看红字。</p>
+  <p class="hero-sub">老登学 AI，免费工具挖到底。分享免费 AI 工具、实用软件、自动化脚本和电脑手机教程，每期实测：能不能免费用、有什么限制、值不值得折腾。</p>
   <p>最后更新：2026-11-08</p>
+  <a class="btn-channel" href="https://www.youtube.com/@freeis.notfree" target="_blank" rel="noopener">▶ 去频道看看 · 免费不免费</a>
 </header>
 <nav>
   <a href="#pro">Pro 活动</a><a href="#domain">免费域名</a><a href="#ai">AI 额度</a><a href="#cloud">大云试用</a><a href="#esim">eSIM</a><a href="#student">学生福利</a><a href="#server">服务器</a><a href="#videos">视频</a><a href="#archive">归档</a>
 </nav>
 <main>
 
-<section id="pro">
+<div class="stats">
+  <a class="stat total" href="#pro"><b id="stat-total">36</b><span>共收录羊毛</span></a>
+  <a class="stat" style="--c:#f59e0b" href="#pro"><b id="stat-pro">2</b><span>Pro 活动</span></a>
+  <a class="stat" style="--c:#3b82f6" href="#domain"><b id="stat-domain">4</b><span>免费域名</span></a>
+  <a class="stat" style="--c:#8b5cf6" href="#ai"><b id="stat-ai">11</b><span>AI 免费额度</span></a>
+  <a class="stat" style="--c:#0ea5e9" href="#cloud"><b id="stat-cloud">4</b><span>大云试用金</span></a>
+  <a class="stat" style="--c:#22c55e" href="#esim"><b id="stat-esim">2</b><span>免费 eSIM</span></a>
+  <a class="stat" style="--c:#ec4899" href="#student"><b id="stat-student">3</b><span>学生福利</span></a>
+  <a class="stat" style="--c:#64748b" href="#server"><b id="stat-server">10</b><span>免费服务器</span></a>
+</div>
+<div class="search-wrap"><input id="q" type="search" placeholder="搜本站：比如 Groq、域名、学生、eSIM…" aria-label="搜索本站内容"></div>
+<div id="noresult">没有找到相关内容，换个关键词试试。</div>
+
+<section id="pro" class="cat-pro">
   <h2>🎁 正在可领的 Pro 活动</h2>
   <div class="tw"><table>
     <tr><th>活动</th><th>内容</th><th>领取注意</th><th>截止 / 有效期</th></tr>
@@ -63,7 +109,7 @@
   <p class="note">绑定账号、绑卡的领取请自行确认规则后再动手；本站不收录需先付费、拉人头、破解或灰色渠道的活动。</p>
 </section>
 
-<section id="domain">
+<section id="domain" class="cat-domain">
   <h2>🌐 免费域名</h2>
   <div class="tw"><table>
     <tr><th>服务商</th><th>免费内容</th><th>适合干嘛</th><th>限制</th></tr>
@@ -74,7 +120,7 @@
   </table></div>
 </section>
 
-<section id="ai">
+<section id="ai" class="cat-ai">
   <h2>🤖 AI 免费额度</h2>
   <div class="tw"><table>
     <tr><th>服务商</th><th>免费额度</th><th>适合干嘛</th><th>限制</th></tr>
@@ -92,7 +138,7 @@
   </table></div>
 </section>
 
-<section id="cloud">
+<section id="cloud" class="cat-cloud">
   <h2>☁️ 大云试用金</h2>
   <div class="tw"><table>
     <tr><th>云厂商</th><th>试用内容</th><th>适合干嘛</th><th>限制</th></tr>
@@ -103,7 +149,7 @@
   </table></div>
 </section>
 
-<section id="esim">
+<section id="esim" class="cat-esim">
   <h2>📱 免费 eSIM / 流量</h2>
   <div class="tw"><table>
     <tr><th>服务商</th><th>免费流量</th><th>适合干嘛</th><th>限制</th></tr>
@@ -112,7 +158,7 @@
   </table></div>
 </section>
 
-<section id="student">
+<section id="student" class="cat-student">
   <h2>🎓 学生 / 教育福利</h2>
   <div class="tw"><table>
     <tr><th>福利</th><th>内容</th><th>资格</th><th>限制</th></tr>
@@ -123,7 +169,7 @@
   <p class="note">只列官方渠道，需资格核验，非学生不适用。仅需真实教育邮箱、无需学生身份核验的会特别注明；伪造、购买、借用教育邮箱的一律不收。</p>
 </section>
 
-<section id="server">
+<section id="server" class="cat-server">
   <h2>🖥️ 免费服务器</h2>
   <p class="note">免费不等于全能：下面这张表把每家没明说的短板标红了，注册前先看红字那一栏。</p>
   <div class="tw"><table>
@@ -141,7 +187,7 @@
   </table></div>
 </section>
 
-<section id="videos">
+<section id="videos" class="cat-videos">
   <h2>🎬 频道视频 · 免费不免费</h2>
   <div class="videos">
     <div class="video-card">
@@ -158,7 +204,7 @@
   <p class="note">更多实测见频道「<a href="https://www.youtube.com/@freeis.notfree" target="_blank" rel="noopener">免费不免费</a>」：怀疑、实测、给结论。</p>
 </section>
 
-<section id="archive">
+<section id="archive" class="cat-archive">
   <h2>🗄️ 已过期归档</h2>
   <ul>
     <li><strong>MangoCV MANGOWEEN</strong><span class="tag dead">已过期</span><br>
@@ -174,7 +220,43 @@
 <footer>
   内容由 Muse 每天核验更新 · 只推官方可验证的活动<br>
   本站规则：每条都链向官网；红字是限制，领之前先看红字；不收录需先付费、拉人头、破解或灰色渠道的活动<br>
+  本站内容仅供参考，领取前请以官网规则为准<br>
   频道「<a href="https://www.youtube.com/@freeis.notfree" target="_blank" rel="noopener">免费不免费</a>」· 最后更新 2026-11-08
 </footer>
+<script>
+(function () {
+  var map = { pro: 'pro', domain: 'domain', ai: 'ai', cloud: 'cloud', esim: 'esim', student: 'student', server: 'server' };
+  var total = 0;
+  Object.keys(map).forEach(function (id) {
+    var sec = document.getElementById(id);
+    if (!sec) return;
+    var rows = sec.querySelectorAll('table tr').length - 1;
+    if (rows < 0) rows = 0;
+    var el = document.getElementById('stat-' + map[id]);
+    if (el) el.textContent = rows;
+    total += rows;
+  });
+  var t = document.getElementById('stat-total');
+  if (t) t.textContent = total;
+  var q = document.getElementById('q');
+  var noresult = document.getElementById('noresult');
+  if (!q) return;
+  q.addEventListener('input', function () {
+    var kw = q.value.trim().toLowerCase();
+    var anyVisible = false;
+    document.querySelectorAll('main section').forEach(function (sec) {
+      var visible = 0;
+      sec.querySelectorAll('table tr:not(:first-child), ul li, .video-card').forEach(function (row) {
+        var hit = !kw || row.textContent.toLowerCase().indexOf(kw) !== -1;
+        row.style.display = hit ? '' : 'none';
+        if (hit) visible++;
+      });
+      sec.style.display = (!kw || visible > 0) ? '' : 'none';
+      if (visible > 0) anyVisible = true;
+    });
+    noresult.style.display = (kw && !anyVisible) ? 'block' : 'none';
+  });
+})();
+</script>
 </body>
 </html>
