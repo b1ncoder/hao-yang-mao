@@ -20,6 +20,10 @@
   .wait { background: #fef9c3; color: #854d0e; }
   .dead { background: #e5e7eb; color: #6b7280; }
   .watch { background: #dbeafe; color: #1e40af; }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; margin-top: 4px; }
+  th, td { border: 1px solid #e5e7eb; padding: 8px 10px; text-align: left; vertical-align: top; }
+  th { background: #f3f4f6; font-size: 13px; white-space: nowrap; }
+  td .bad { color: #dc2626; font-weight: 600; }
   .note { font-size: 13px; color: #6b7280; }
   a { color: #2563eb; text-decoration: none; }
   a:hover { text-decoration: underline; }
@@ -96,24 +100,18 @@
 
 <section>
   <h2>🖥️ 免费服务器</h2>
-  <ul>
-    <li><strong>Cloady</strong><span class="tag ok">可用</span><br>
-    免费区美西 / 美东，适合搭备用节点；但规格只有 0.3 核 / 256MB 内存，出口是机房 IP、Cloudflare 风险系数高，晚上速度一般。</li>
-    <li><strong>Vortexa</strong><span class="tag watch">盯盘中</span><br>
-    免费档含 Node.js / Java 计划，库存时有时无；Java 计划不能跑节点（无 SSH、只能跑 Java），Node.js 经常无货，保活规则未核实。</li>
-    <li><strong>ASCS</strong><span class="tag watch">盯盘中</span><br>
-    免费机定期补货，先到先得；免费机只有 1 核 / 512MB / 16GB，每 30 天要续期一次。</li>
-    <li><strong>Serv00</strong><span class="tag wait">需审核</span><br>
-    免费共享主机，注册后需人工审核；不是 VPS、无 root，审核最多等 72 小时，需定期登录保活。</li>
-    <li><strong>VPSWala</strong><span class="tag ok">可领</span><br>
-    $0 Starter 免费套餐，免绑卡；但开通要人工审核、无明确时限，条款还要求公司邮箱。</li>
-    <li><strong>Railway</strong><span class="tag wait">额度有限</span><br>
-    免费档每月 $1 额度，做不了 24/7 常驻节点；$1 只够约 50MB 内存，服务必须休眠。</li>
-    <li><strong>InstaBox</strong><span class="tag wait">有限制</span><br>
-    免费 1 台 4 核 8GB / 20GB；实测 VLESS + WS 经官方公开端口 URL 能跑通，但无独立公网 IPv4、IPv6 入站不通，REALITY 不可用；闲置 30 分钟自动暂停、最长连跑 8 小时，只适合临时或备用节点。</li>
-    <li><strong>InfinityFree</strong><span class="tag ok">可用</span><br>
-    永久免费虚拟主机，5GB 空间，适合搭静态页（无 SSH / root）；自订域名要改 NS，部分免费域名接不进来。</li>
-  </ul>
+  <p class="note">免费不等于全能：下面这张表把每家没明说的短板标红了，注册前先看红字那一栏。</p>
+  <table>
+    <tr><th>服务商</th><th>免费规格</th><th>适合干嘛</th><th>没有的功能 / 限制</th></tr>
+    <tr><td><strong>Cloady</strong></td><td>免费区美西 / 美东</td><td>搭备用节点</td><td><span class="bad">只有 0.3 核 / 256MB 内存；出口是机房 IP、Cloudflare 风险系数高；晚上速度一般</span></td></tr>
+    <tr><td><strong>Vortexa</strong></td><td>免费档 Node.js / Java 计划</td><td>等补货领机</td><td><span class="bad">Java 计划无 SSH、只能跑 Java；Node.js 经常无货；保活规则未核实</span></td></tr>
+    <tr><td><strong>ASCS</strong></td><td>免费机 1 核 / 512MB / 16GB</td><td>等补货领机</td><td><span class="bad">每 30 天要续期一次；补货先到先得，抢不到就没货</span></td></tr>
+    <tr><td><strong>Serv00</strong></td><td>免费共享主机</td><td>轻量挂机</td><td><span class="bad">不是 VPS、无 root；注册需人工审核（最多 72 小时）；需定期登录保活</span></td></tr>
+    <tr><td><strong>VPSWala</strong></td><td>$0 Starter，免绑卡</td><td>等开通</td><td><span class="bad">开通要人工审核、无明确时限；条款要求公司邮箱</span></td></tr>
+    <tr><td><strong>Railway</strong></td><td>每月 $1 额度</td><td>临时跑小服务</td><td><span class="bad">做不了 24/7 常驻；$1 只够约 50MB 内存；服务必须休眠</span></td></tr>
+    <tr><td><strong>InstaBox</strong></td><td>免费 1 台 4 核 8GB / 20GB</td><td>临时或备用节点</td><td><span class="bad">无独立公网 IPv4、IPv6 入站不通、REALITY 不可用；闲置 30 分钟暂停、最长连跑 8 小时</span></td></tr>
+    <tr><td><strong>InfinityFree</strong></td><td>永久免费虚拟主机，5GB 空间</td><td>搭静态页</td><td><span class="bad">无 SSH / root；自订域名要改 NS，部分免费域名接不进来</span></td></tr>
+  </table>
 </section>
 
 <section>
