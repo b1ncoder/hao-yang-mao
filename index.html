@@ -63,6 +63,16 @@
   .cat-pro { --c: #f59e0b; } .cat-domain { --c: #3b82f6; } .cat-ai { --c: #8b5cf6; } .cat-cloud { --c: #0ea5e9; } .cat-esim { --c: #22c55e; } .cat-student { --c: #ec4899; } .cat-server { --c: #64748b; } .cat-videos { --c: #ef4444; } .cat-archive { --c: #9ca3af; }
   tr:hover { background: #f9fafb; }
   #noresult { display: none; text-align: center; color: #6b7280; padding: 24px; background: #fff; border-radius: 12px; }
+  .cat-news { --c: #14b8a6; }
+  .news-updated { font-size: 12px; color: #9ca3af; margin: 0 0 4px; }
+  .news-item { border-bottom: 1px solid #f0f0f0; padding: 10px 0; }
+  .news-item:last-child { border-bottom: none; }
+  .news-bi { display: grid; grid-template-columns: 1fr 1fr; gap: 2px 16px; }
+  .news-en { font-weight: 600; }
+  .news-en a { color: #111827; }
+  .news-zh { color: #4b5563; }
+  .news-meta { font-size: 12px; color: #9ca3af; margin-top: 4px; }
+  @media (max-width: 600px) { .news-bi { grid-template-columns: 1fr; } }
   @media (max-width: 600px) {
     header h1 { font-size: 24px; }
     header { padding: 28px 16px 22px; }
@@ -82,7 +92,7 @@
   <a class="btn-channel" href="https://www.youtube.com/@freeis.notfree" target="_blank" rel="noopener">▶ 去频道看看 · 免费不免费</a>
 </header>
 <nav>
-  <a href="#pro">Pro 活动</a><a href="#domain">免费域名</a><a href="#ai">AI 额度</a><a href="#cloud">大云试用</a><a href="#esim">eSIM</a><a href="#student">学生福利</a><a href="#server">服务器</a><a href="#videos">视频</a><a href="#archive">归档</a>
+  <a href="#news">新闻</a><a href="#pro">Pro 活动</a><a href="#domain">免费域名</a><a href="#ai">AI 额度</a><a href="#cloud">大云试用</a><a href="#esim">eSIM</a><a href="#student">学生福利</a><a href="#server">服务器</a><a href="#videos">视频</a><a href="#archive">归档</a>
 </nav>
 <main>
 
@@ -98,6 +108,64 @@
 </div>
 <div class="search-wrap"><input id="q" type="search" placeholder="搜本站：比如 Groq、域名、学生、eSIM…" aria-label="搜索本站内容"></div>
 <div id="noresult">没有找到相关内容，换个关键词试试。</div>
+
+<section id="news" class="cat-news">
+<h2>📰 最新科技新闻</h2>
+<p class="news-updated">最后刷新：2026-11-08 23:26（每 3 小时更新）· 英文附中文翻译</p>
+<!-- NEWS-START -->
+<article class="news-item">
+<div class="news-bi">
+<div class="news-en"><a href="https://techcrunch.com/2026/11/08/ninjas-autobarista-is-impressively-versatile-but-one-feature-was-a-dealbreaker-for-me/" target="_blank" rel="noopener">Ninja's AutoBarista is impressively versatile, but one feature was a dealbreaker for me</a></div>
+<div class="news-zh">忍者 AutoBarista 功能很全，但有一个缺点让我却步</div>
+</div>
+<div class="news-meta">TechCrunch · 11-08 23:00</div>
+</article>
+<article class="news-item">
+<div class="news-en"><a href="https://www.ithome.com/1/024/011.htm" target="_blank" rel="noopener">马斯克：特斯拉将进一步改进 Cybercab，提升能效、新增配色</a></div>
+<div class="news-meta">IT之家 · 11-08 23:00</div>
+</article>
+<article class="news-item">
+<div class="news-en"><a href="https://www.ithome.com/1/024/010.htm" target="_blank" rel="noopener">蚂蚁集团：旗下 AI 助手灵光用户数量已突破 2000 万，2.0 版本上线一周已帮助用户管理超 116 万项事务</a></div>
+<div class="news-meta">IT之家 · 11-08 22:47</div>
+</article>
+<article class="news-item">
+<div class="news-en"><a href="https://www.ithome.com/1/024/009.htm" target="_blank" rel="noopener">当贝推出 H5 第二代电视盒子：升级全志 H626 处理器，469 元</a></div>
+<div class="news-meta">IT之家 · 11-08 22:31</div>
+</article>
+<article class="news-item">
+<div class="news-bi">
+<div class="news-en"><a href="https://arstechnica.com/science/2026/11/physicists-listened-to-electrical-noise-to-crack-a-superconductor-mystery/" target="_blank" rel="noopener">Physicists listened to electrical noise to crack a superconductor mystery</a></div>
+<div class="news-zh">物理学家靠电流噪声破解超导体之谜</div>
+</div>
+<div class="news-meta">Ars Technica · 11-08 20:15</div>
+</article>
+<article class="news-item">
+<div class="news-en"><a href="https://sspai.com/post/118114" target="_blank" rel="noopener">苹果产品那些不够颠覆，却值得被学习的细节</a></div>
+<div class="news-meta">少数派 · 11-08 19:18</div>
+</article>
+<article class="news-item">
+<div class="news-bi">
+<div class="news-en"><a href="https://github.com/synchopate/llama-modchip" target="_blank" rel="noopener">Llama-modchip: 284B DeepSeek on 64GB RAM, no GPU</a></div>
+<div class="news-zh">64GB 内存、无 GPU 跑 284B DeepSeek</div>
+</div>
+<div class="news-meta">Hacker News · 11-08 18:22</div>
+</article>
+<article class="news-item">
+<div class="news-bi">
+<div class="news-en"><a href="https://caleb.software/posts/claude-to-pi.html" target="_blank" rel="noopener">Goodbye Claude, Hello Pi</a></div>
+<div class="news-zh">告别 Claude，拥抱 Pi</div>
+</div>
+<div class="news-meta">Hacker News · 11-08 11:11</div>
+</article>
+<article class="news-item">
+<div class="news-bi">
+<div class="news-en"><a href="https://techcrunch.com/2026/11/07/after-the-midterms-things-are-looking-rocky-for-elon-musk-and-data-centers/" target="_blank" rel="noopener">After the midterms, things are looking rocky for Elon Musk and data centers</a></div>
+<div class="news-zh">中期选举后，马斯克和数据中心的日子不好过了</div>
+</div>
+<div class="news-meta">TechCrunch · 11-08 06:07</div>
+</article>
+<!-- NEWS-END -->
+</section>
 
 <section id="pro" class="cat-pro">
   <h2>🎁 正在可领的 Pro 活动</h2>
@@ -246,7 +314,7 @@
     var anyVisible = false;
     document.querySelectorAll('main section').forEach(function (sec) {
       var visible = 0;
-      sec.querySelectorAll('table tr:not(:first-child), ul li, .video-card').forEach(function (row) {
+      sec.querySelectorAll('table tr:not(:first-child), ul li, .video-card, .news-item').forEach(function (row) {
         var hit = !kw || row.textContent.toLowerCase().indexOf(kw) !== -1;
         row.style.display = hit ? '' : 'none';
         if (hit) visible++;
