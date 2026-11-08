@@ -10,6 +10,9 @@
   header { background: #111827; color: #fff; padding: 36px 20px 28px; text-align: center; }
   header h1 { margin: 0 0 8px; font-size: 28px; }
   header p { margin: 4px 0; color: #cbd5e1; font-size: 14px; }
+  nav { background: #1f2937; padding: 10px 16px; text-align: center; position: sticky; top: 0; z-index: 10; }
+  nav a { color: #d1d5db; font-size: 13px; margin: 0 8px; white-space: nowrap; }
+  nav a:hover { color: #fff; }
   main { max-width: 860px; margin: 0 auto; padding: 20px 16px 40px; }
   section { background: #fff; border-radius: 12px; padding: 18px 20px; margin-bottom: 16px; box-shadow: 0 1px 3px rgba(0,0,0,.06); }
   h2 { margin: 0 0 12px; font-size: 19px; border-bottom: 1px solid #eee; padding-bottom: 8px; }
@@ -20,6 +23,8 @@
   .wait { background: #fef9c3; color: #854d0e; }
   .dead { background: #e5e7eb; color: #6b7280; }
   .watch { background: #dbeafe; color: #1e40af; }
+  .limit { background: #ffedd5; color: #9a3412; }
+  .tw { overflow-x: auto; }
   table { width: 100%; border-collapse: collapse; font-size: 14px; margin-top: 4px; }
   th, td { border: 1px solid #e5e7eb; padding: 8px 10px; text-align: left; vertical-align: top; }
   th { background: #f3f4f6; font-size: 13px; white-space: nowrap; }
@@ -27,6 +32,12 @@
   .note { font-size: 13px; color: #6b7280; }
   a { color: #2563eb; text-decoration: none; }
   a:hover { text-decoration: underline; }
+  .videos { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .video-card { border: 1px solid #e5e7eb; border-radius: 10px; overflow: hidden; }
+  .video-card img { width: 100%; display: block; }
+  .video-card div { padding: 10px 12px; font-size: 13px; }
+  .video-card strong { font-size: 14px; display: block; margin-bottom: 4px; }
+  @media (max-width: 600px) { .videos { grid-template-columns: 1fr; } }
   footer { text-align: center; color: #9ca3af; font-size: 13px; padding: 0 16px 32px; }
 </style>
 </head>
@@ -34,74 +45,88 @@
 <header>
   <h1>🐑 薅羊毛情报站</h1>
   <p>只收录官方可验证的免费羊毛 · 每天核验更新</p>
+  <p>每条都链向官网，红字是限制，领之前先看红字。</p>
   <p>最后更新：2026-11-08</p>
 </header>
+<nav>
+  <a href="#pro">Pro 活动</a><a href="#domain">免费域名</a><a href="#ai">AI 额度</a><a href="#cloud">大云试用</a><a href="#esim">eSIM</a><a href="#student">学生福利</a><a href="#server">服务器</a><a href="#videos">视频</a><a href="#archive">归档</a>
+</nav>
 <main>
 
-<section>
+<section id="pro">
   <h2>🎁 正在可领的 Pro 活动</h2>
-  <ul>
-    <li><strong><a href="https://kiro.dev">Kiro 首升 Pro 试用</a></strong><span class="tag ok">可领</span><br>
-    官方免费试用：首月剩余免费 + 500 试用 credits。须绑卡，<strong>11 月 30 日前必须取消，否则 12 月 1 日起每月 $20</strong>。</li>
-  </ul>
+  <div class="tw"><table>
+    <tr><th>活动</th><th>内容</th><th>领取注意</th><th>截止 / 有效期</th></tr>
+    <tr><td><strong><a href="https://kiro.dev" target="_blank" rel="noopener">Kiro 首升 Pro 试用</a></strong> <span class="tag ok">可领</span></td><td>首月剩余免费 + 500 试用 credits</td><td>须绑卡</td><td><span class="bad">11 月 30 日前必须取消，否则 12 月 1 日起每月 $20</span></td></tr>
+    <tr><td><strong><a href="https://www.articul8.ai/bivia" target="_blank" rel="noopener">Articul8 Bivia 早鸟</a></strong> <span class="tag limit">限时</span></td><td>前 1 万名早鸟免费领 10 亿 token；之后输入 $0.042 / 百万 token、输出 $0</td><td>免绑卡；它是决策模型（是 / 否、选择、评分等 9 种判断），不是聊天模型</td><td>领后 90 天有效</td></tr>
+  </table></div>
   <p class="note">绑定账号、绑卡的领取请自行确认规则后再动手；本站不收录需先付费、拉人头、破解或灰色渠道的活动。</p>
 </section>
 
-<section>
+<section id="domain">
   <h2>🌐 免费域名</h2>
-  <ul>
-    <li><strong><a href="https://domain.pu.gy">pu.gy 免费子域名</a></strong><span class="tag ok">可领</span><br>
-    5 位以上前缀免费，每账户最多 3 个，每次有效期 1 年。拿免费短域名挂网站、做视频素材都行；但不支持自定义 NS 与 MX，DNS 生效很慢，面板偶有保存失败。</li>
-    <li><strong><a href="https://digitalplat.org">DigitalPlat dpdns.org</a></strong><span class="tag ok">可领</span><br>
-    免费子域名，可改 NS 接入 Cloudflare，适合挂自己的服务；免费名额有限（每账户 2 个，GitHub 点星可再得 1 个）。</li>
-    <li><strong>eu.org 免费域名</strong><span class="tag wait">待核实</span><br>
-    规则还在核实，暂不推荐。</li>
-  </ul>
+  <div class="tw"><table>
+    <tr><th>服务商</th><th>免费内容</th><th>适合干嘛</th><th>限制</th></tr>
+    <tr><td><strong><a href="https://domain.pu.gy" target="_blank" rel="noopener">pu.gy 免费子域名</a></strong> <span class="tag ok">可领</span></td><td>5 位以上前缀免费，每账户最多 3 个，每次有效期 1 年</td><td>拿免费短域名挂网站、做视频素材</td><td><span class="bad">不支持自定义 NS 与 MX；DNS 生效很慢；面板偶有保存失败</span></td></tr>
+    <tr><td><strong><a href="https://digitalplat.org" target="_blank" rel="noopener">DigitalPlat dpdns.org</a></strong> <span class="tag ok">可领</span></td><td>免费子域名，每账户 2 个，GitHub 点星可再得 1 个</td><td>挂自己的服务，可改 NS 接入 Cloudflare</td><td><span class="bad">免费名额有限</span></td></tr>
+    <tr><td><strong><a href="https://www.is-a.dev" target="_blank" rel="noopener">is-a.dev</a></strong> <span class="tag ok">长期免费</span></td><td>免费领一个 xxx.is-a.dev 子域名，Cloudflare 赞助 DNS</td><td>个人网站</td><td><span class="bad">须 GitHub 账号、提 PR 人工审核；不得用 AI 生成申请</span></td></tr>
+    <tr><td><strong>eu.org 免费域名</strong> <span class="tag wait">待核实</span></td><td>规则还在核实</td><td>—</td><td>暂不推荐</td></tr>
+  </table></div>
 </section>
 
-<section>
+<section id="ai">
   <h2>🤖 AI 免费额度</h2>
-  <ul>
-    <li><strong><a href="https://opencode.ai">OpenCode 免费模型</a></strong><span class="tag ok">可用</span><br>
-    免 Key 可用 11 个免费模型，含 DeepSeek V4.1 Flash；官方称免费期输入可能被用于改进模型，敏感内容别放。</li>
-    <li><strong><a href="https://console.typesafe.ai">Jev（TypeSafe）</a></strong><span class="tag ok">可用</span><br>
-    决策模型：输入 $0.042 / 百万 tokens，输出免费，适合做工作流的决策层。</li>
-    <li><strong>FreeLLMAPI 免费厂商聚合</strong><span class="tag ok">可用</span><br>
-    自有免费 Key 聚合，厂商官网已逐家核查，持续免费层与已下线的已分开标注。</li>
-    <li><strong>DeepSeek V4.1 Flash 免费路由</strong><span class="tag wait">逐家核实中</span><br>
-    多家免费供应商提供 1M 上下文免费调用，正在逐家对官网核实。</li>
-    <li><strong>Radium $25 额度</strong><span class="tag wait">待核实</span><br>
-    官方邮件称 API Key 已备好、$25 额度免绑卡，有效期与领取方式待核实。</li>
-  </ul>
+  <div class="tw"><table>
+    <tr><th>服务商</th><th>免费额度</th><th>适合干嘛</th><th>限制</th></tr>
+    <tr><td><strong><a href="https://opencode.ai" target="_blank" rel="noopener">OpenCode 免费模型</a></strong> <span class="tag ok">可用</span></td><td>免 Key 可用 11 个免费模型，含 DeepSeek V4.1 Flash</td><td>写东西、摘要、小脚本</td><td><span class="bad">免费期输入可能被用于改进模型，敏感内容别放</span></td></tr>
+    <tr><td><strong><a href="https://console.typesafe.ai" target="_blank" rel="noopener">Jev（TypeSafe）</a></strong> <span class="tag ok">可用</span></td><td>输入 $0.042 / 百万 tokens，输出免费</td><td>工作流的决策层</td><td><span class="bad">是决策模型，不是聊天模型</span></td></tr>
+    <tr><td><strong><a href="https://console.groq.com/docs/rate-limits" target="_blank" rel="noopener">Groq 免费层</a></strong> <span class="tag ok">长期免费</span></td><td>免费 API，含 gpt-oss、Qwen3、Whisper 语音转文字</td><td>快速推理、语音转文字</td><td><span class="bad">按模型限速（如 30 请求 / 分钟、1000 请求 / 天）</span></td></tr>
+    <tr><td><strong><a href="https://ai.google.dev/gemini-api/docs/pricing" target="_blank" rel="noopener">Gemini API 免费层</a></strong> <span class="tag ok">长期免费</span></td><td>多个 Flash 模型输入输出均免费</td><td>日常调用、长上下文</td><td><span class="bad">免费期内容可能被用于改进产品；Pro 模型不在免费层</span></td></tr>
+    <tr><td><strong><a href="https://www.perchai.app/pricing" target="_blank" rel="noopener">Perch AI Starter</a></strong> <span class="tag ok">长期免费</span></td><td>每月 20,000 PT（约 $20 用量），含 Laguna S 2.1、DeepSeek V4.1 Flash、GLM 5.3 Flash</td><td>网页 / 桌面 / CLI 三端用 AI</td><td><span class="bad">免费档 Data Program 默认开启，记得去设置里关；无直接 API，可自带 Key</span></td></tr>
+    <tr><td><strong>FreeLLMAPI 免费厂商聚合</strong> <span class="tag ok">可用</span></td><td>自有免费 Key 聚合</td><td>一个入口管多家免费 Key</td><td><span class="bad">各家规则以厂商官网为准</span></td></tr>
+    <tr><td><strong>DeepSeek V4.1 Flash 免费路由</strong> <span class="tag wait">逐家核实中</span></td><td>多家免费供应商提供 1M 上下文免费调用</td><td>免费跑 DeepSeek</td><td>正在逐家对官网核实</td></tr>
+    <tr><td><strong>Radium $25 额度</strong> <span class="tag wait">待核实</span></td><td>官方邮件称 API Key 已备好、$25 额度免绑卡</td><td>自有模型 API</td><td>有效期与领取方式待核实</td></tr>
+    <tr><td><strong><a href="https://lovable.dev/pricing" target="_blank" rel="noopener">Lovable 免费版</a></strong> <span class="tag ok">长期免费</span></td><td>每天 5 构建 credits（每月上限 30），另每月 20 Cloud credits + 4 AI credits</td><td>快速做网站、发页面</td><td><span class="bad">每日赠额当天过期、不结转</span></td></tr>
+    <tr><td><strong><a href="https://bolt.new/pricing" target="_blank" rel="noopener">Bolt.new 免费版</a></strong> <span class="tag ok">长期免费</span></td><td>每天 30 万 token，每月上限 100 万；可发布到 bolt.host</td><td>做网站</td><td><span class="bad">网站带品牌标识；文件上传限 10MB</span></td></tr>
+    <tr><td><strong><a href="https://devin.ai/pricing" target="_blank" rel="noopener">Devin Desktop 免费版</a></strong> <span class="tag ok">长期免费</span></td><td>$0，轻量 agent 配额、无限 Tab 补全</td><td>轻量 AI 编程</td><td><span class="bad">官方明言不提供付费版试用</span></td></tr>
+  </table></div>
 </section>
 
-<section>
+<section id="cloud">
   <h2>☁️ 大云试用金</h2>
-  <ul>
-    <li><strong>AWS / Azure / GCP / Oracle 新用户试用金</strong><span class="tag ok">可领</span><br>
-    各家新用户都有试用额度（如 GCP 送 $300 / 90 天）。须绑卡，超量按卡计费，记得设预算告警。</li>
-  </ul>
+  <div class="tw"><table>
+    <tr><th>云厂商</th><th>试用内容</th><th>适合干嘛</th><th>限制</th></tr>
+    <tr><td><strong><a href="https://aws.amazon.com/free" target="_blank" rel="noopener">AWS 免费层</a></strong> <span class="tag limit">限时</span></td><td>新账户 $100，完成后最多再得 $100，合计 $200，6 个月内有效</td><td>试用云服务</td><td><span class="bad">须绑卡；只限部分服务；6 个月后或额度用完账户自动关闭，不转付费</span></td></tr>
+    <tr><td><strong><a href="https://cloud.google.com/free" target="_blank" rel="noopener">Google Cloud</a></strong> <span class="tag limit">限时 + 长期免费</span></td><td>新用户 $300，90 天；另有 Always Free（每月 1 台 e2-micro 等）</td><td>试用 + 常驻小机</td><td><span class="bad">须绑卡；超免费量按卡计费，记得设预算告警</span></td></tr>
+    <tr><td><strong><a href="https://www.oracle.com/cloud/free/" target="_blank" rel="noopener">Oracle Cloud</a></strong> <span class="tag limit">限时 + 长期免费</span></td><td>$300，30 天；另有 Always Free（Ampere A1、AMD 微型实例、200GB 存储）</td><td>试用 + 常驻 ARM 机</td><td><span class="bad">须绑卡 + 手机验证；不收虚拟 / 预付卡；闲置 30 天以上可能停用</span></td></tr>
+    <tr><td><strong><a href="https://azure.microsoft.com/free" target="_blank" rel="noopener">Azure 免费账户</a></strong> <span class="tag limit">限时 + 长期免费</span></td><td>$200，30 天内用完；25+ 服务免费 12 个月；55+ 服务永久免费量</td><td>试用云服务</td><td><span class="bad">须绑卡；30 天或额度用完后须转付费，否则停用</span></td></tr>
+  </table></div>
 </section>
 
-<section>
+<section id="esim">
   <h2>📱 免费 eSIM / 流量</h2>
-  <ul>
-    <li>暂无在领活动。<span class="tag wait">盯盘中</span></li>
-  </ul>
+  <div class="tw"><table>
+    <tr><th>服务商</th><th>免费流量</th><th>适合干嘛</th><th>限制</th></tr>
+    <tr><td><strong><a href="https://www.firsty.app/plans/firsty-free" target="_blank" rel="noopener">Firsty Free</a></strong> <span class="tag ok">长期免费</span></td><td>看广告得流量，每条 20MB，每天最多 360MB，余额上限 240MB；覆盖 177 国</td><td>出行备用流量（WhatsApp、邮件、Uber）</td><td><span class="bad">澳门 / 香港手机号不能注册，须用支持国家号码注册，注册后可在港澳使用；只够基础应用</span></td></tr>
+    <tr><td><strong><a href="https://www.eskimo.travel/en/blog/eskimo-esim-signup-promo-get-free-500mb-global-data" target="_blank" rel="noopener">Eskimo</a></strong> <span class="tag limit">限时</span></td><td>注册填官方码 FREE500MB，得 500MB 全球流量；覆盖 111 国（含港澳）；数据不过期</td><td>出行流量</td><td><span class="bad">需 eSIM 设备；限时推广，条款随时可变；只用官方码，别用第三方 referral 码</span></td></tr>
+  </table></div>
 </section>
 
-<section>
+<section id="student">
   <h2>🎓 学生 / 教育福利</h2>
-  <ul>
-    <li>只列官方渠道，需资格核验，非学生不适用。<span class="tag wait">需资格核验</span><br>
-    仅需真实教育邮箱、无需学生身份核验的会特别注明；伪造、购买、借用教育邮箱的一律不收。</li>
-  </ul>
+  <div class="tw"><table>
+    <tr><th>福利</th><th>内容</th><th>资格</th><th>限制</th></tr>
+    <tr><td><strong><a href="https://education.github.com/pack" target="_blank" rel="noopener">GitHub Student Developer Pack</a></strong> <span class="tag ok">在读期间</span></td><td>GitHub Pro、Copilot 学生版、Codespaces 每月 180 核时、约 80 家伙伴优惠</td><td>13 岁以上在读学生，学校邮箱或学生证件核验</td><td><span class="bad">福利随在读状态，定期重验，毕业即止；切勿购买所谓“已验证账号”</span></td></tr>
+    <tr><td><strong><a href="https://www.jetbrains.com/lp/general-leaflets/students/" target="_blank" rel="noopener">JetBrains 学生许可</a></strong> <span class="tag ok">在读期间</span></td><td>全部桌面 IDE 免费 1 年，可续</td><td>认可院校 1 年以上全日制在读学生 / 教职工</td><td><span class="bad">仅限非商业学习用途</span></td></tr>
+    <tr><td><strong><a href="https://azure.microsoft.com/en-us/pricing/offers/ms-azr-0170p" target="_blank" rel="noopener">Azure for Students</a></strong> <span class="tag limit">限时 12 个月</span></td><td>$100 额度，12 个月内用完，另加部分免费服务</td><td>年满 18、全日制在读、学校邮箱核验</td><td><span class="bad">每人限一订阅；额度不可转让、不可结转</span></td></tr>
+  </table></div>
+  <p class="note">只列官方渠道，需资格核验，非学生不适用。仅需真实教育邮箱、无需学生身份核验的会特别注明；伪造、购买、借用教育邮箱的一律不收。</p>
 </section>
 
-<section>
+<section id="server">
   <h2>🖥️ 免费服务器</h2>
   <p class="note">免费不等于全能：下面这张表把每家没明说的短板标红了，注册前先看红字那一栏。</p>
-  <table>
+  <div class="tw"><table>
     <tr><th>服务商</th><th>免费规格</th><th>适合干嘛</th><th>没有的功能 / 限制</th></tr>
     <tr><td><strong>Cloady</strong></td><td>免费区美西 / 美东</td><td>搭备用节点</td><td><span class="bad">只有 0.3 核 / 256MB 内存；出口是机房 IP、Cloudflare 风险系数高；晚上速度一般</span></td></tr>
     <tr><td><strong>Vortexa</strong></td><td>免费档 Node.js / Java 计划</td><td>等补货领机</td><td><span class="bad">Java 计划无 SSH、只能跑 Java；Node.js 经常无货；保活规则未核实</span></td></tr>
@@ -111,10 +136,29 @@
     <tr><td><strong>Railway</strong></td><td>每月 $1 额度</td><td>临时跑小服务</td><td><span class="bad">做不了 24/7 常驻；$1 只够约 50MB 内存；服务必须休眠</span></td></tr>
     <tr><td><strong>InstaBox</strong></td><td>免费 1 台 4 核 8GB / 20GB</td><td>临时或备用节点</td><td><span class="bad">无独立公网 IPv4、IPv6 入站不通、REALITY 不可用；闲置 30 分钟暂停、最长连跑 8 小时</span></td></tr>
     <tr><td><strong>InfinityFree</strong></td><td>永久免费虚拟主机，5GB 空间</td><td>搭静态页</td><td><span class="bad">无 SSH / root；自订域名要改 NS，部分免费域名接不进来</span></td></tr>
-  </table>
+    <tr><td><strong><a href="https://www.oracle.com/cloud/free/" target="_blank" rel="noopener">Oracle Cloud Always Free</a></strong> <span class="tag ok">长期免费</span></td><td>Ampere A1 免费实例 + 2 台 AMD 微型实例 + 200GB 存储</td><td>常驻小服务</td><td><span class="bad">须绑卡 + 手机验证；热门区常无容量；闲置可能回收</span></td></tr>
+    <tr><td><strong><a href="https://cloud.google.com/free" target="_blank" rel="noopener">GCP Always Free</a></strong> <span class="tag ok">长期免费</span></td><td>每月 1 台 e2-micro、30GB 盘、1GB 出站</td><td>常驻小服务</td><td><span class="bad">须绑卡；仅限美西 / 美中 / 美东三区；超量按卡计费</span></td></tr>
+  </table></div>
 </section>
 
-<section>
+<section id="videos">
+  <h2>🎬 频道视频 · 免费不免费</h2>
+  <div class="videos">
+    <div class="video-card">
+      <a href="https://www.youtube.com/watch?v=OERLpI_jjyI" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/OERLpI_jjyI/hqdefault.jpg" alt="Magpie 本地全能中继实测" loading="lazy"></a>
+      <div><strong><a href="https://www.youtube.com/watch?v=OERLpI_jjyI" target="_blank" rel="noopener">1 个网关榨干所有 AI 免费额度：Magpie 本地全能中继实测</a></strong>
+      本地 AI 网关实测：一个网关管所有免费额度，用完自动切换。</div>
+    </div>
+    <div class="video-card">
+      <a href="https://youtube.com/watch?v=morMambZqvQ" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/morMambZqvQ/hqdefault.jpg" alt="低成本 eSIM 长期保号实测" loading="lazy"></a>
+      <div><strong><a href="https://youtube.com/watch?v=morMambZqvQ" target="_blank" rel="noopener">低成本 eSIM 长期保号实测 + 自动答题脚本白嫖英国流量</a></strong>
+      低成本 eSIM 保号 + 免费流量实测，全程免费教程。</div>
+    </div>
+  </div>
+  <p class="note">更多实测见频道「<a href="https://www.youtube.com/@freeis.notfree" target="_blank" rel="noopener">免费不免费</a>」：怀疑、实测、给结论。</p>
+</section>
+
+<section id="archive">
   <h2>🗄️ 已过期归档</h2>
   <ul>
     <li><strong>MangoCV MANGOWEEN</strong><span class="tag dead">已过期</span><br>
@@ -129,7 +173,8 @@
 </main>
 <footer>
   内容由 Muse 每天核验更新 · 只推官方可验证的活动<br>
-  频道「<a href="https://www.youtube.com/@freeis.notfree">免费不免费</a>」· 最后更新 2026-11-08
+  本站规则：每条都链向官网；红字是限制，领之前先看红字；不收录需先付费、拉人头、破解或灰色渠道的活动<br>
+  频道「<a href="https://www.youtube.com/@freeis.notfree" target="_blank" rel="noopener">免费不免费</a>」· 最后更新 2026-11-08
 </footer>
 </body>
 </html>
