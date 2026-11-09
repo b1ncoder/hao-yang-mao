@@ -8,80 +8,7 @@
 <meta property="og:title" content="薅羊毛情报站 — 只收录官方可验证的免费羊毛">
 <meta property="og:description" content="免费 Pro、免费域名、AI 免费额度、大云试用金、免费 eSIM、学生福利、免费服务器，每天核验更新。">
 <meta property="og:type" content="website">
-<style>
-  * { box-sizing: border-box; }
-  body { font-family: -apple-system, "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif; margin: 0; background: #f6f7f9; color: #222; line-height: 1.6; }
-  header { background: #111827; color: #fff; padding: 36px 20px 28px; text-align: center; }
-  header h1 { margin: 0 0 8px; font-size: 28px; }
-  header p { margin: 4px 0; color: #cbd5e1; font-size: 14px; }
-  nav { background: #1f2937; padding: 10px 16px; text-align: center; position: sticky; top: 0; z-index: 10; }
-  nav a { color: #d1d5db; font-size: 13px; margin: 0 8px; white-space: nowrap; }
-  nav a:hover { color: #fff; }
-  main { max-width: 860px; margin: 0 auto; padding: 20px 16px 40px; }
-  section { background: #fff; border-radius: 12px; padding: 18px 20px; margin-bottom: 16px; box-shadow: 0 1px 3px rgba(0,0,0,.06); }
-  h2 { margin: 0 0 12px; font-size: 19px; border-bottom: 1px solid #eee; padding-bottom: 8px; }
-  ul { margin: 0; padding-left: 20px; }
-  li { margin-bottom: 10px; }
-  .tag { display: inline-block; font-size: 12px; border-radius: 20px; padding: 1px 8px; margin-left: 6px; vertical-align: middle; }
-  .ok { background: #dcfce7; color: #166534; }
-  .wait { background: #fef9c3; color: #854d0e; }
-  .dead { background: #e5e7eb; color: #6b7280; }
-  .watch { background: #dbeafe; color: #1e40af; }
-  .limit { background: #ffedd5; color: #9a3412; }
-  .tw { overflow-x: auto; }
-  table { width: 100%; border-collapse: collapse; font-size: 14px; margin-top: 4px; }
-  th, td { border: 1px solid #e5e7eb; padding: 8px 10px; text-align: left; vertical-align: top; }
-  th { background: #f3f4f6; font-size: 13px; white-space: nowrap; }
-  td .bad { color: #dc2626; font-weight: 600; }
-  .note { font-size: 13px; color: #6b7280; }
-  a { color: #2563eb; text-decoration: none; }
-  a:hover { text-decoration: underline; }
-  .videos { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
-  .video-card { border: 1px solid #e5e7eb; border-radius: 10px; overflow: hidden; }
-  .video-card img { width: 100%; display: block; }
-  .video-card div { padding: 10px 12px; font-size: 13px; }
-  .video-card strong { font-size: 14px; display: block; margin-bottom: 4px; }
-  @media (max-width: 600px) { .videos { grid-template-columns: 1fr; } }
-  footer { text-align: center; color: #9ca3af; font-size: 13px; padding: 0 16px 32px; }
-  nav { overflow-x: auto; white-space: nowrap; scrollbar-width: none; }
-  nav::-webkit-scrollbar { display: none; }
-  .hero-sub { max-width: 640px; margin: 8px auto 0; }
-  .btn-channel { display: inline-block; background: #ef4444; color: #fff; padding: 8px 20px; border-radius: 20px; font-size: 14px; margin-top: 12px; font-weight: 600; }
-  .btn-channel:hover { text-decoration: none; background: #dc2626; color: #fff; }
-  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 10px; margin-bottom: 16px; }
-  .stat { background: #fff; border-radius: 12px; padding: 14px 10px 12px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,.06); border-top: 3px solid var(--c, #64748b); display: block; color: #222; transition: transform .15s, box-shadow .15s; }
-  .stat:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,.10); text-decoration: none; }
-  .stat b { font-size: 26px; display: block; line-height: 1.2; }
-  .stat span { font-size: 12px; color: #6b7280; }
-  .stat.total { background: #111827; color: #fff; border-top-color: #f59e0b; }
-  .stat.total span { color: #cbd5e1; }
-  .search-wrap { margin-bottom: 16px; }
-  .search-wrap input { width: 100%; padding: 11px 14px; border: 1px solid #e5e7eb; border-radius: 10px; font-size: 15px; background: #fff; }
-  .search-wrap input:focus { outline: none; border-color: #2563eb; }
-  section { border-top: 3px solid var(--c, #e5e7eb); transition: box-shadow .15s; }
-  section:hover { box-shadow: 0 4px 14px rgba(0,0,0,.08); }
-  .cat-pro { --c: #f59e0b; } .cat-domain { --c: #3b82f6; } .cat-ai { --c: #8b5cf6; } .cat-cloud { --c: #0ea5e9; } .cat-esim { --c: #22c55e; } .cat-student { --c: #ec4899; } .cat-server { --c: #64748b; } .cat-videos { --c: #ef4444; } .cat-archive { --c: #9ca3af; }
-  tr:hover { background: #f9fafb; }
-  #noresult { display: none; text-align: center; color: #6b7280; padding: 24px; background: #fff; border-radius: 12px; }
-  .cat-news { --c: #14b8a6; }
-  .cat-xnews { --c: #1d9bf0; } .cat-xwool { --c: #1d9bf0; }
-  .news-updated { font-size: 12px; color: #9ca3af; margin: 0 0 4px; }
-  .news-item { border-bottom: 1px solid #f0f0f0; padding: 10px 0; }
-  .news-item:last-child { border-bottom: none; }
-  .news-bi { display: grid; grid-template-columns: 1fr 1fr; gap: 2px 16px; }
-  .news-en { font-weight: 600; }
-  .news-en a { color: #111827; }
-  .news-zh { color: #4b5563; }
-  .news-meta { font-size: 12px; color: #9ca3af; margin-top: 4px; }
-  @media (max-width: 600px) { .news-bi { grid-template-columns: 1fr; } }
-  @media (max-width: 600px) {
-    header h1 { font-size: 24px; }
-    header { padding: 28px 16px 22px; }
-    th, td { padding: 6px 8px; font-size: 13px; }
-    .stat b { font-size: 22px; }
-    section { padding: 14px 14px; }
-  }
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header>
@@ -114,211 +41,70 @@
 
 <section id="news" class="cat-news">
 <h2>📰 最新科技新闻</h2>
-<p class="news-updated">最后刷新：2026-11-09 08:30</p>
-<!-- NEWS-START -->
-<article class="news-item">
-<div class="news-en"><a href="https://www.ithome.com/1/024/034.htm" target="_blank" rel="noopener">苹果：App Store 已有超 10 万款适配 iPhone Duo 的应用程序</a></div>
-<div class="news-meta">IT之家 · 11-09 08:15</div>
-</article>
-<article class="news-item">
-<div class="news-bi">
-<div class="news-en"><a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxON0FRR1p0bktGRUNxcjdhcmRhdXN6MUlTWl83cnloMnlJMWxHbk0wV3dBVzVPWlZtWXl2ZzgwUm1HTGtHZ2NIbEc4Q1FxbWVvX2FKOUpSeFRkZlNjRFFOY1BwUzFSaHNISDBDeE1rUGZqSTQ1bWV6Tm1qbW9JM3V3TkxZTTg3aWJmdGUwMUJzbnVNbk1iODNlak9uTlFmY1lHRVJOenBrME8yYlFPcV9HSWdKUnc?oc=5" target="_blank" rel="noopener">OpenAI Valuation Hits $1.25 Trillion in New Funding Round - PYMNTS.com</a></div>
-<div class="news-zh">OpenAI 新一輪融資估值達 1.25 兆美元</div>
-</div>
-<div class="news-meta">Google News · 11-09 08:06</div>
-</article>
-<article class="news-item">
-<div class="news-bi">
-<div class="news-en"><a href="https://www.techmeme.com/261108/p17#a261108p17" target="_blank" rel="noopener">Sources: Marco Rubio oversaw the drafting of a classified memo this spring warning Trump admin that Jensen Huang was in a close relationship with a Chinese spy (New York Times)</a></div>
-<div class="news-zh">消息稱盧比奧今年春天主導起草機密備忘錄，警告特朗普政府黃仁勳與一名中國間諜關係密切</div>
-</div>
-<div class="news-meta">Techmeme · 11-09 07:55</div>
-</article>
-<article class="news-item">
-<div class="news-en"><a href="https://www.ithome.com/1/024/029.htm" target="_blank" rel="noopener">古尔曼：苹果最早明年推出自主代理式 Siri，主动代用户完成任务</a></div>
-<div class="news-meta">IT之家 · 11-09 07:51</div>
-</article>
-<article class="news-item">
-<div class="news-bi">
-<div class="news-en"><a href="https://isocpp.org/files/papers/P4454R0.pdf" target="_blank" rel="noopener">Herb Sutter: When a language&#x27;s creator and its owners strongly disagree [pdf]</a></div>
-<div class="news-zh">Herb Sutter：當語言創造者與擁有者意見嚴重分歧時</div>
-</div>
-<div class="news-meta">Hacker News · 11-09 07:28</div>
-</article>
-<article class="news-item">
-<div class="news-bi">
-<div class="news-en"><a href="https://www.techmeme.com/261108/p16#a261108p16" target="_blank" rel="noopener">Sources: officials at the Commerce Department&#x27;s AI safety center CAISSI were asked to informally report to a White House office, raising independence concerns (Garance Burke/Associated Press)</a></div>
-<div class="news-zh">消息稱美國商務部 AI 安全中心官員被要求向白宮辦公室非正式匯報，引發獨立性擔憂</div>
-</div>
-<div class="news-meta">Techmeme · 11-09 06:55</div>
-</article>
-<article class="news-item">
-<div class="news-bi">
-<div class="news-en"><a href="https://news.google.com/rss/articles/CBMizgFBVV95cUxNOW1WLUp3ZVE4OWpCZFlzazVycDF6bWFRcVdKUE1kZ0lKdW92WEM2UnRLWUtvbTNhTDJUQ2ZLMEpDODZqbE1LbEdseW9TUHNEUUtfdmdaR0ZqRGhiMjNhOXNPTVhGcmlBcGUwbFl2VUtnM3N4SzRGTmZSaEp0R2tCNVNkNFZKMS1UMkRBUVp6Rm13Q1ZuYkhmcEl3UjVrbG9fX1ZRMFNjUjF0VFVUWmI5dVZ1aWMxSGZSUDl4Z1NtUHBzbEMwYnppWWdmczVGQQ?oc=5" target="_blank" rel="noopener">‘AI clog’: UK public bodies battle onslaught of chatbot-generated complaints - The Guardian</a></div>
-<div class="news-zh">「AI 堵塞」：英國公共機構疲於應付聊天機器人生成的大量投訴</div>
-</div>
-<div class="news-meta">Google News · 11-09 06:51</div>
-</article>
-<article class="news-item">
-<div class="news-en"><a href="https://sspai.com/post/118805" target="_blank" rel="noopener">派早报：特斯拉将停产 Cybertruck</a></div>
-<div class="news-meta">少数派 · 11-09 06:41</div>
-</article>
-<article class="news-item">
-<div class="news-bi">
-<div class="news-en"><a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxQQVAwU2QwNnU3R0dQVlFPcmhqODhXVVlfMXhJZ2l3QS0zVlZYNjVvZm1KYkhEVklBOWlIMEZNMkl2SkFrNFBGWURJR1MtejI4QjRZbGwyTHJMQkR5NGxXZEU0Z0VJZlBOS2pMamNFV3N1VW9OUXd0TUVFc1FqME8zNzVwU3ZTeFhQVmdTb0NBNW5JcGlURTN0MHRrZXl2c1VwVlFIeF9HWmVpdm9IWnZpWnNNSzk?oc=5" target="_blank" rel="noopener">RBA’s Hunter Says AI Boom Will Put Near-Term Pressure on Prices - Bloomberg</a></div>
-<div class="news-zh">澳洲央行官員稱 AI 熱潮將給物價帶來短期上行壓力</div>
-</div>
-<div class="news-meta">Google News · 11-09 06:30</div>
-</article>
-<article class="news-item">
-<div class="news-bi">
-<div class="news-en"><a href="https://techcrunch.com/2026/11/08/apps-to-distract-you-from-the-endless-cycle-of-doomscrolling/" target="_blank" rel="noopener">Apps to distract you from the endless cycle of doomscrolling</a></div>
-<div class="news-zh">幫你擺脫無止境刷手機循環的 App</div>
-</div>
-<div class="news-meta">TechCrunch · 11-09 06:00</div>
-</article>
-<!-- NEWS-END -->
+<p class="news-updated" id="news-updated"></p>
+<div id="news-list"></div>
 </section>
 
 <section id="xnews" class="cat-xnews">
 <h2>X 新闻热门</h2>
-<p class="note">X 上今天最热的科技话题，链接指向原始报道，每轮搜集更新。</p>
-<div class="tw"><table>
-<tr><th>话题</th><th>一句话</th><th>时间</th><th>链接</th></tr>
-<tr><td>Anthropic 34 亿美元买燃气发电机组</td><td>接手 OnePWR 向卡特彼勒订的 1.7GW 发电机组订单，AI 实验室最大一笔发电设备采购</td><td>11-08</td><td><a href="https://www.reuters.com/business/energy/anthropic-secures-34-billion-generator-deal-ai-data-centers-ft-reports-2026-11-08/" target="_blank" rel="noopener">路透报道</a></td></tr>
-<tr><td>64GB 内存、无 GPU 跑 284B DeepSeek</td><td>llama-modchip 把 284B MoE 模型压到 59GB 以内，纯 CPU 跑起来</td><td>11-08</td><td><a href="https://github.com/synchopate/llama-modchip" target="_blank" rel="noopener">GitHub 项目</a></td></tr>
-<tr><td>纳斯达克单日跌 5.5%，AI 泡沫担忧重燃</td><td>24 小时市值蒸发逾 2.5 万亿美元，市场质疑 AI 资本开支回报周期</td><td>11-08</td><td><a href="https://buttondown.com/ai-daily-mini/archive/ai-daily-2026-11-08/" target="_blank" rel="noopener">AI Daily 日报</a></td></tr>
-<tr><td>古尔曼：苹果 Siri AI 团队或迎大调整</td><td>工程副总裁罗克韦尔考虑明年走人；CEO 特努斯敦促软件主管大胆搞 AI</td><td>11-08</td><td><a href="https://www.ithome.com/1/024/014.htm" target="_blank" rel="noopener">IT之家报道</a></td></tr>
-</table></div>
+<div class="x-tags" id="tags-xnews"></div>
+<div id="snaps-xnews"></div>
+<p class="note">X 上今天最热的科技话题，链接指向原始报道，每小时搜集更新；点时段只切换本区快照，只留最近 12 小时。</p>
 </section>
 
 <section id="xwool" class="cat-xwool">
 <h2>X 羊毛热门</h2>
-<p class="note">X 上的热门羊毛帖，只作线索。未经逐条核验的不进 Pro 活动区，领之前先看官网规则。</p>
-<div class="tw"><table>
-<tr><th>帖子</th><th>内容</th><th>作者</th><th>状态</th><th>链接</th></tr>
-<tr><td>11.3 羊毛合集</td><td>Deepgram 新账号送 $200、Vercel AI Gateway 每月 $5 免费额度、智谱国际站三模型免费不绑卡、Lovable 每天 5 构建点数</td><td>@Jonnyhlkw</td><td><span class="tag wait">待核实</span></td><td><a href="https://x.com/Jonnyhlkw/status/2117433509501702423" target="_blank" rel="noopener">看原帖</a></td></tr>
-<tr><td>WorkBuddy 免费结束</td><td>国际版 DeepSeek-V4.1-Flash 免费到 10 月 31 日，11 月 2 日中午起开始收费</td><td>@Himalayas1989</td><td><span class="tag dead">免费已结束</span></td><td><a href="https://x.com/Himalayas1989/status/2117453030744601055" target="_blank" rel="noopener">看原帖</a></td></tr>
-<tr><td>Grok Bot 免费试用</td><td>xAI 官方宣布 Grok Bot 开放免费试用，限量额度</td><td>@bot</td><td><span class="tag wait">待核实</span></td><td><a href="https://x.com/bot/status/2090852881373311369" target="_blank" rel="noopener">看原帖</a></td></tr>
-</table></div>
+<div class="x-tags" id="tags-xwool"></div>
+<div id="snaps-xwool"></div>
+<p class="note">X 上的热门羊毛帖，只作线索。未经逐条核验的不进 Pro 活动区，领之前先看官网规则；每小时搜集更新。</p>
 </section>
 
 <section id="pro" class="cat-pro">
   <h2>🎁 正在可领的 Pro 活动</h2>
-  <div class="tw"><table>
-    <tr><th>活动</th><th>内容</th><th>领取注意</th><th>截止 / 有效期</th></tr>
-    <tr><td><strong><a href="https://kiro.dev" target="_blank" rel="noopener">Kiro 首升 Pro 试用</a></strong> <span class="tag ok">可领</span></td><td>首月剩余免费 + 500 试用 credits</td><td>须绑卡</td><td><span class="bad">11 月 30 日前必须取消，否则 12 月 1 日起每月 $20</span></td></tr>
-    <tr><td><strong><a href="https://www.articul8.ai/bivia" target="_blank" rel="noopener">Articul8 Bivia 早鸟</a></strong> <span class="tag limit">限时</span></td><td>前 1 万名早鸟免费领 10 亿 token；之后输入 $0.042 / 百万 token、输出 $0</td><td>免绑卡；它是决策模型（是 / 否、选择、评分等 9 种判断），不是聊天模型</td><td>领后 90 天有效</td></tr>
-  </table></div>
+  <div class="tw"><table><thead><tr><th>活动</th><th>内容</th><th>领取注意</th><th>截止 / 有效期</th></tr></thead><tbody id="body-pro"></tbody></table></div>
   <p class="note">绑定账号、绑卡的领取请自行确认规则后再动手；本站不收录需先付费、拉人头、破解或灰色渠道的活动。</p>
 </section>
 
 <section id="domain" class="cat-domain">
   <h2>🌐 免费域名</h2>
-  <div class="tw"><table>
-    <tr><th>服务商</th><th>免费内容</th><th>适合干嘛</th><th>限制</th></tr>
-    <tr><td><strong><a href="https://domain.pu.gy" target="_blank" rel="noopener">pu.gy 免费子域名</a></strong> <span class="tag ok">可领</span></td><td>5 位以上前缀免费，每账户最多 3 个，每次有效期 1 年</td><td>拿免费短域名挂网站、做视频素材</td><td><span class="bad">不支持自定义 NS 与 MX；DNS 生效很慢；面板偶有保存失败</span></td></tr>
-    <tr><td><strong><a href="https://digitalplat.org" target="_blank" rel="noopener">DigitalPlat dpdns.org</a></strong> <span class="tag ok">可领</span></td><td>免费子域名，每账户 2 个，GitHub 点星可再得 1 个</td><td>挂自己的服务，可改 NS 接入 Cloudflare</td><td><span class="bad">免费名额有限</span></td></tr>
-    <tr><td><strong><a href="https://www.is-a.dev" target="_blank" rel="noopener">is-a.dev</a></strong> <span class="tag ok">长期免费</span></td><td>免费领一个 xxx.is-a.dev 子域名，Cloudflare 赞助 DNS</td><td>个人网站</td><td><span class="bad">须 GitHub 账号、提 PR 人工审核；不得用 AI 生成申请</span></td></tr>
-    <tr><td><strong>eu.org 免费域名</strong> <span class="tag wait">待核实</span></td><td>规则还在核实</td><td>—</td><td>暂不推荐</td></tr>
-  </table></div>
+  <div class="tw"><table><thead><tr><th>服务商</th><th>免费内容</th><th>适合干嘛</th><th>限制</th></tr></thead><tbody id="body-domain"></tbody></table></div>
 </section>
 
 <section id="ai" class="cat-ai">
   <h2>🤖 AI 免费额度</h2>
-  <div class="tw"><table>
-    <tr><th>服务商</th><th>免费额度</th><th>适合干嘛</th><th>限制</th></tr>
-    <tr><td><strong><a href="https://opencode.ai" target="_blank" rel="noopener">OpenCode 免费模型</a></strong> <span class="tag ok">可用</span></td><td>免 Key 可用 11 个免费模型，含 DeepSeek V4.1 Flash</td><td>写东西、摘要、小脚本</td><td><span class="bad">免费期输入可能被用于改进模型，敏感内容别放</span></td></tr>
-    <tr><td><strong><a href="https://console.typesafe.ai" target="_blank" rel="noopener">Jev（TypeSafe）</a></strong> <span class="tag ok">可用</span></td><td>输入 $0.042 / 百万 tokens，输出免费</td><td>工作流的决策层</td><td><span class="bad">是决策模型，不是聊天模型</span></td></tr>
-    <tr><td><strong><a href="https://console.groq.com/docs/rate-limits" target="_blank" rel="noopener">Groq 免费层</a></strong> <span class="tag ok">长期免费</span></td><td>免费 API，含 gpt-oss、Qwen3、Whisper 语音转文字</td><td>快速推理、语音转文字</td><td><span class="bad">按模型限速（如 30 请求 / 分钟、1000 请求 / 天）</span></td></tr>
-    <tr><td><strong><a href="https://ai.google.dev/gemini-api/docs/pricing" target="_blank" rel="noopener">Gemini API 免费层</a></strong> <span class="tag ok">长期免费</span></td><td>多个 Flash 模型输入输出均免费</td><td>日常调用、长上下文</td><td><span class="bad">免费期内容可能被用于改进产品；Pro 模型不在免费层</span></td></tr>
-    <tr><td><strong><a href="https://www.perchai.app/pricing" target="_blank" rel="noopener">Perch AI Starter</a></strong> <span class="tag ok">长期免费</span></td><td>每月 20,000 PT（约 $20 用量），含 Laguna S 2.1、DeepSeek V4.1 Flash、GLM 5.3 Flash</td><td>网页 / 桌面 / CLI 三端用 AI</td><td><span class="bad">免费档 Data Program 默认开启，记得去设置里关；无直接 API，可自带 Key</span></td></tr>
-    <tr><td><strong><a href="https://deepgram.com/pricing" target="_blank" rel="noopener">Deepgram</a></strong> <span class="tag ok">一次性额度</span></td><td>新账号送 $200 额度，免绑卡、不过期，约合 43,000 分钟 Nova-3 转录</td><td>语音转文字、语音助手</td><td><span class="bad">一次性额度，用完按量付费；无持续免费层</span></td></tr>
-    <tr><td><strong>FreeLLMAPI 免费厂商聚合</strong> <span class="tag ok">可用</span></td><td>自有免费 Key 聚合</td><td>一个入口管多家免费 Key</td><td><span class="bad">各家规则以厂商官网为准</span></td></tr>
-    <tr><td><strong>DeepSeek V4.1 Flash 免费路由</strong> <span class="tag wait">逐家核实中</span></td><td>多家免费供应商提供 1M 上下文免费调用</td><td>免费跑 DeepSeek</td><td>正在逐家对官网核实</td></tr>
-    <tr><td><strong>Radium $25 额度</strong> <span class="tag wait">待核实</span></td><td>官方邮件称 API Key 已备好、$25 额度免绑卡</td><td>自有模型 API</td><td>有效期与领取方式待核实</td></tr>
-    <tr><td><strong><a href="https://lovable.dev/pricing" target="_blank" rel="noopener">Lovable 免费版</a></strong> <span class="tag ok">长期免费</span></td><td>每天 5 构建 credits（每月上限 30），另每月 20 Cloud credits + 4 AI credits</td><td>快速做网站、发页面</td><td><span class="bad">每日赠额当天过期、不结转</span></td></tr>
-    <tr><td><strong><a href="https://bolt.new/pricing" target="_blank" rel="noopener">Bolt.new 免费版</a></strong> <span class="tag ok">长期免费</span></td><td>每天 30 万 token，每月上限 100 万；可发布到 bolt.host</td><td>做网站</td><td><span class="bad">网站带品牌标识；文件上传限 10MB</span></td></tr>
-    <tr><td><strong><a href="https://devin.ai/pricing" target="_blank" rel="noopener">Devin Desktop 免费版</a></strong> <span class="tag ok">长期免费</span></td><td>$0，轻量 agent 配额、无限 Tab 补全</td><td>轻量 AI 编程</td><td><span class="bad">官方明言不提供付费版试用</span></td></tr>
-  </table></div>
+  <div class="tw"><table><thead><tr><th>服务商</th><th>免费额度</th><th>适合干嘛</th><th>限制</th></tr></thead><tbody id="body-ai"></tbody></table></div>
 </section>
 
 <section id="cloud" class="cat-cloud">
   <h2>☁️ 大云试用金</h2>
-  <div class="tw"><table>
-    <tr><th>云厂商</th><th>试用内容</th><th>适合干嘛</th><th>限制</th></tr>
-    <tr><td><strong><a href="https://aws.amazon.com/free" target="_blank" rel="noopener">AWS 免费层</a></strong> <span class="tag limit">限时</span></td><td>新账户 $100，完成后最多再得 $100，合计 $200，6 个月内有效</td><td>试用云服务</td><td><span class="bad">须绑卡；只限部分服务；6 个月后或额度用完账户自动关闭，不转付费</span></td></tr>
-    <tr><td><strong><a href="https://cloud.google.com/free" target="_blank" rel="noopener">Google Cloud</a></strong> <span class="tag limit">限时 + 长期免费</span></td><td>新用户 $300，90 天；另有 Always Free（每月 1 台 e2-micro 等）</td><td>试用 + 常驻小机</td><td><span class="bad">须绑卡；超免费量按卡计费，记得设预算告警</span></td></tr>
-    <tr><td><strong><a href="https://www.oracle.com/cloud/free/" target="_blank" rel="noopener">Oracle Cloud</a></strong> <span class="tag limit">限时 + 长期免费</span></td><td>$300，30 天；另有 Always Free（Ampere A1、AMD 微型实例、200GB 存储）</td><td>试用 + 常驻 ARM 机</td><td><span class="bad">须绑卡 + 手机验证；不收虚拟 / 预付卡；闲置 30 天以上可能停用</span></td></tr>
-    <tr><td><strong><a href="https://azure.microsoft.com/free" target="_blank" rel="noopener">Azure 免费账户</a></strong> <span class="tag limit">限时 + 长期免费</span></td><td>$200，30 天内用完；25+ 服务免费 12 个月；55+ 服务永久免费量</td><td>试用云服务</td><td><span class="bad">须绑卡；30 天或额度用完后须转付费，否则停用</span></td></tr>
-  </table></div>
+  <div class="tw"><table><thead><tr><th>云厂商</th><th>试用内容</th><th>适合干嘛</th><th>限制</th></tr></thead><tbody id="body-cloud"></tbody></table></div>
 </section>
 
 <section id="esim" class="cat-esim">
   <h2>📱 免费 eSIM / 流量</h2>
-  <div class="tw"><table>
-    <tr><th>服务商</th><th>免费流量</th><th>适合干嘛</th><th>限制</th></tr>
-    <tr><td><strong><a href="https://www.firsty.app/plans/firsty-free" target="_blank" rel="noopener">Firsty Free</a></strong> <span class="tag ok">长期免费</span></td><td>看广告得流量，每条 20MB，每天最多 360MB，余额上限 240MB；覆盖 177 国</td><td>出行备用流量（WhatsApp、邮件、Uber）</td><td><span class="bad">澳门 / 香港手机号不能注册，须用支持国家号码注册，注册后可在港澳使用；只够基础应用</span></td></tr>
-    <tr><td><strong><a href="https://www.eskimo.travel/en/blog/eskimo-esim-signup-promo-get-free-500mb-global-data" target="_blank" rel="noopener">Eskimo</a></strong> <span class="tag limit">限时</span></td><td>注册填官方码 FREE500MB，得 500MB 全球流量；覆盖 111 国（含港澳）；数据不过期</td><td>出行流量</td><td><span class="bad">需 eSIM 设备；限时推广，条款随时可变；只用官方码，别用第三方 referral 码</span></td></tr>
-  </table></div>
+  <div class="tw"><table><thead><tr><th>服务商</th><th>免费流量</th><th>适合干嘛</th><th>限制</th></tr></thead><tbody id="body-esim"></tbody></table></div>
 </section>
 
 <section id="student" class="cat-student">
   <h2>🎓 学生 / 教育福利</h2>
-  <div class="tw"><table>
-    <tr><th>福利</th><th>内容</th><th>资格</th><th>限制</th></tr>
-    <tr><td><strong><a href="https://education.github.com/pack" target="_blank" rel="noopener">GitHub Student Developer Pack</a></strong> <span class="tag ok">在读期间</span></td><td>GitHub Pro、Copilot 学生版、Codespaces 每月 180 核时、约 80 家伙伴优惠</td><td>13 岁以上在读学生，学校邮箱或学生证件核验</td><td><span class="bad">福利随在读状态，定期重验，毕业即止；切勿购买所谓“已验证账号”</span></td></tr>
-    <tr><td><strong><a href="https://www.jetbrains.com/lp/general-leaflets/students/" target="_blank" rel="noopener">JetBrains 学生许可</a></strong> <span class="tag ok">在读期间</span></td><td>全部桌面 IDE 免费 1 年，可续</td><td>认可院校 1 年以上全日制在读学生 / 教职工</td><td><span class="bad">仅限非商业学习用途</span></td></tr>
-    <tr><td><strong><a href="https://azure.microsoft.com/en-us/pricing/offers/ms-azr-0170p" target="_blank" rel="noopener">Azure for Students</a></strong> <span class="tag limit">限时 12 个月</span></td><td>$100 额度，12 个月内用完，另加部分免费服务</td><td>年满 18、全日制在读、学校邮箱核验</td><td><span class="bad">每人限一订阅；额度不可转让、不可结转</span></td></tr>
-  </table></div>
+  <div class="tw"><table><thead><tr><th>福利</th><th>内容</th><th>资格</th><th>限制</th></tr></thead><tbody id="body-student"></tbody></table></div>
   <p class="note">只列官方渠道，需资格核验，非学生不适用。仅需真实教育邮箱、无需学生身份核验的会特别注明；伪造、购买、借用教育邮箱的一律不收。</p>
 </section>
 
 <section id="server" class="cat-server">
   <h2>🖥️ 免费服务器</h2>
-  <p class="note">免费不等于全能：下面这张表把每家没明说的短板标红了，注册前先看红字那一栏。</p>
-  <div class="tw"><table>
-    <tr><th>服务商</th><th>免费规格</th><th>适合干嘛</th><th>没有的功能 / 限制</th></tr>
-    <tr><td><strong>Cloady</strong></td><td>免费区美西 / 美东</td><td>搭备用节点</td><td><span class="bad">只有 0.3 核 / 256MB 内存；出口是机房 IP、Cloudflare 风险系数高；晚上速度一般</span></td></tr>
-    <tr><td><strong>Vortexa</strong></td><td>免费档 Node.js / Java 计划</td><td>等补货领机</td><td><span class="bad">Java 计划无 SSH、只能跑 Java；Node.js 经常无货；保活规则未核实</span></td></tr>
-    <tr><td><strong>ASCS</strong></td><td>免费机 1 核 / 512MB / 16GB</td><td>等补货领机</td><td><span class="bad">每 30 天要续期一次；补货先到先得，抢不到就没货</span></td></tr>
-    <tr><td><strong>Serv00</strong></td><td>免费共享主机</td><td>轻量挂机</td><td><span class="bad">不是 VPS、无 root；注册需人工审核（最多 72 小时）；需定期登录保活</span></td></tr>
-    <tr><td><strong>VPSWala</strong></td><td>$0 Starter，免绑卡</td><td>等开通</td><td><span class="bad">开通要人工审核、无明确时限；条款要求公司邮箱</span></td></tr>
-    <tr><td><strong>Railway</strong></td><td>每月 $1 额度</td><td>临时跑小服务</td><td><span class="bad">做不了 24/7 常驻；$1 只够约 50MB 内存；服务必须休眠</span></td></tr>
-    <tr><td><strong>InstaBox</strong></td><td>免费 1 台 4 核 8GB / 20GB</td><td>临时或备用节点</td><td><span class="bad">无独立公网 IPv4、IPv6 入站不通、REALITY 不可用；闲置 30 分钟暂停、最长连跑 8 小时</span></td></tr>
-    <tr><td><strong>InfinityFree</strong></td><td>永久免费虚拟主机，5GB 空间</td><td>搭静态页</td><td><span class="bad">无 SSH / root；自订域名要改 NS，部分免费域名接不进来</span></td></tr>
-    <tr><td><strong><a href="https://www.oracle.com/cloud/free/" target="_blank" rel="noopener">Oracle Cloud Always Free</a></strong> <span class="tag ok">长期免费</span></td><td>Ampere A1 免费实例 + 2 台 AMD 微型实例 + 200GB 存储</td><td>常驻小服务</td><td><span class="bad">须绑卡 + 手机验证；热门区常无容量；闲置可能回收</span></td></tr>
-    <tr><td><strong><a href="https://cloud.google.com/free" target="_blank" rel="noopener">GCP Always Free</a></strong> <span class="tag ok">长期免费</span></td><td>每月 1 台 e2-micro、30GB 盘、1GB 出站</td><td>常驻小服务</td><td><span class="bad">须绑卡；仅限美西 / 美中 / 美东三区；超量按卡计费</span></td></tr>
-  </table></div>
+  <div class="tw"><table><thead><tr><th>服务商</th><th>免费规格</th><th>适合干嘛</th><th>没有的功能 / 限制</th></tr></thead><tbody id="body-server"></tbody></table></div>
+  <p class="note">免费不等于全能：上面这张表把每家没明说的短板标红了，注册前先看红字那一栏。</p>
 </section>
 
 <section id="videos" class="cat-videos">
   <h2>🎬 频道视频 · 免费不免费</h2>
-  <div class="videos">
-    <div class="video-card">
-      <a href="https://www.youtube.com/watch?v=OERLpI_jjyI" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/OERLpI_jjyI/hqdefault.jpg" alt="Magpie 本地全能中继实测" loading="lazy"></a>
-      <div><strong><a href="https://www.youtube.com/watch?v=OERLpI_jjyI" target="_blank" rel="noopener">1 个网关榨干所有 AI 免费额度：Magpie 本地全能中继实测</a></strong>
-      本地 AI 网关实测：一个网关管所有免费额度，用完自动切换。</div>
-    </div>
-    <div class="video-card">
-      <a href="https://youtube.com/watch?v=morMambZqvQ" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/morMambZqvQ/hqdefault.jpg" alt="低成本 eSIM 长期保号实测" loading="lazy"></a>
-      <div><strong><a href="https://youtube.com/watch?v=morMambZqvQ" target="_blank" rel="noopener">低成本 eSIM 长期保号实测 + 自动答题脚本白嫖英国流量</a></strong>
-      低成本 eSIM 保号 + 免费流量实测，全程免费教程。</div>
-    </div>
-  </div>
-  <p class="note">更多实测见频道「<a href="https://www.youtube.com/@freeis.notfree" target="_blank" rel="noopener">免费不免费</a>」：怀疑、实测、给结论。</p>
+  <div class="videos" id="videos-grid"></div><p class="note">更多实测见频道「<a href="https://www.youtube.com/@freeis.notfree" target="_blank" rel="noopener">免费不免费</a>」：怀疑、实测、给结论。</p>
 </section>
 
 <section id="archive" class="cat-archive">
   <h2>🗄️ 已过期归档</h2>
-  <ul>
-    <li><strong>MangoCV MANGOWEEN</strong><span class="tag dead">已过期</span><br>
-    已于 2026-11-02 00:59 截止。</li>
-    <li><strong>WarpX</strong><span class="tag dead">不领</span><br>
-    多账号自动化工具，已决定不领。</li>
-    <li><strong>Google AI 学生年 / ChatGPT Plus 学生 4 个月</strong><span class="tag dead">已过期或不适用</span><br>
-    前者不在适用名单，后者已于 10 月 31 日截止。</li>
-  </ul>
+  <ul id="archive-list"></ul>
 </section>
 
 </main>
@@ -328,49 +114,17 @@
   本站内容仅供参考，领取前请以官网规则为准<br>
   频道「<a href="https://www.youtube.com/@freeis.notfree" target="_blank" rel="noopener">免费不免费</a>」· 最后更新 2026-11-09
 </footer>
-<script>
-(function () {
-  var map = { pro: 'pro', domain: 'domain', ai: 'ai', cloud: 'cloud', esim: 'esim', student: 'student', server: 'server' };
-  var total = 0;
-  Object.keys(map).forEach(function (id) {
-    var sec = document.getElementById(id);
-    if (!sec) return;
-    var rows = sec.querySelectorAll('table tr').length - 1;
-    if (rows < 0) rows = 0;
-    var el = document.getElementById('stat-' + map[id]);
-    if (el) el.textContent = rows;
-    total += rows;
-  });
-  var statOnly = { xnews: 'xnews', xwool: 'xwool' };
-  Object.keys(statOnly).forEach(function (id) {
-    var sec = document.getElementById(id);
-    if (!sec) return;
-    var rows = sec.querySelectorAll('table tr').length - 1;
-    if (rows < 0) rows = 0;
-    var el = document.getElementById('stat-' + statOnly[id]);
-    if (el) el.textContent = rows;
-  });
-  var t = document.getElementById('stat-total');
-  if (t) t.textContent = total;
-  var q = document.getElementById('q');
-  var noresult = document.getElementById('noresult');
-  if (!q) return;
-  q.addEventListener('input', function () {
-    var kw = q.value.trim().toLowerCase();
-    var anyVisible = false;
-    document.querySelectorAll('main section').forEach(function (sec) {
-      var visible = 0;
-      sec.querySelectorAll('table tr:not(:first-child), ul li, .video-card, .news-item').forEach(function (row) {
-        var hit = !kw || row.textContent.toLowerCase().indexOf(kw) !== -1;
-        row.style.display = hit ? '' : 'none';
-        if (hit) visible++;
-      });
-      sec.style.display = (!kw || visible > 0) ? '' : 'none';
-      if (visible > 0) anyVisible = true;
-    });
-    noresult.style.display = (kw && !anyVisible) ? 'block' : 'none';
-  });
-})();
-</script>
+<script src="data/news.js"></script>
+<script src="data/x.js"></script>
+<script src="data/sec-pro.js"></script>
+<script src="data/sec-domain.js"></script>
+<script src="data/sec-ai.js"></script>
+<script src="data/sec-cloud.js"></script>
+<script src="data/sec-esim.js"></script>
+<script src="data/sec-student.js"></script>
+<script src="data/sec-server.js"></script>
+<script src="data/sec-videos.js"></script>
+<script src="data/sec-archive.js"></script>
+<script src="app.js"></script>
 </body>
 </html>
