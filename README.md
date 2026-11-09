@@ -56,7 +56,7 @@
 
 首页内容已由构建静态写进 HTML；`bundle.js`（数据 + `app.js`）加载后只做 hydration：内容已在就跳过渲染（stamp 不一致时强制重渲染），然后接线时段切换、搜索，自动重算统计卡（栏目按表行数、X 按可见快照行数）。X 两区时段切换是**各管各的**（点哪个区的标签只切本区）。
 
-**日间/夜间模式（2026-11-09 加）：**导航栏右侧有切换按钮（内联 SVG 太阳/月亮图标 + “夜间模式”/“日间模式”文字，`aria-pressed` 与 `aria-label` 随状态变）。两套配色是 `style.css` 里的 CSS 变量，`html[data-theme="light"|"dark"]` 驱动；首次访问默认跟随系统，手动选过后存 `localStorage`（键 `theme`）并优先于系统；模板 head 里有内联小脚本，在 CSS 加载前就定好 `data-theme`，防闪烁。切换时同步更新 `theme-color` meta（浅色 `#111827`、深色 `#0f172a`）。无 JS 时按钮由 `<noscript>` 隐藏，页面按浅色默认主题显示（系统深色时靠 CSS 的 `prefers-color-scheme` 回退）。
+**日间/夜间模式（2026-11-09 加，20:12 改悬浮）：**切换按钮是 `position: fixed` 的深色半透明毛玻璃胶囊，固定在页面右上角、滚动也不动（`body` 的直接子元素，不在导航栏里）；手机上只留图标、不挡居中标题。两套配色是 `style.css` 里的 CSS 变量，`html[data-theme="light"|"dark"]` 驱动；首次访问默认跟随系统，手动选过后存 `localStorage`（键 `theme`）并优先于系统；模板 head 里有内联小脚本，在 CSS 加载前就定好 `data-theme`，防闪烁。切换时同步更新 `theme-color` meta（浅色 `#111827`、深色 `#0f172a`）。无 JS 时按钮由 `<noscript>` 隐藏，页面按浅色默认主题显示（系统深色时靠 CSS 的 `prefers-color-scheme` 回退）。`style.css` 引用带内容哈希 `?v=<sha1 前 10 位>`（构建脚本自动算），改了样式就换地址，不怕旧缓存。视频卡封面用 16:9 的 `maxresdefault.jpg`（`width=1280 height=720`，`mqdefault` 320w 备选，`maxres` 缺失时 `onerror` 回退 `hqdefault`）。X 两区时段标签手机上是 4 列等宽网格（12 小时正好 3 行），电脑上仍是横向排列。
 
 ## 回滚
 
@@ -72,4 +72,4 @@
 
 ## 本地验证
 
-`node --check app.js data/*.js bundle.js` 检查语法；构建后跑 `python3 build-static.py`，再用 jsdom 抽查：无 JS 时首页应有全部内容（新闻 10 条、服务器表 10 行），带 bundle 加载后计数不变、搜索与时段切换正常（抽查脚本见 OPTIMIZATION-NOTES.md）。
+`node --check app.js data/*.js bundle.js` 检查语法；构建后跑 `python3 build-static.py`，再用 jsdom 抽查：`node ../hidden_files/domtest/test-all.js`（主题切换、SSR 内容、搜索/时段切换、视频图、X 标签网格全过才算过；快照数从 `data/x.js` 取期望值，别再硬编码）。

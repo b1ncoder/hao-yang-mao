@@ -147,7 +147,7 @@
     if (!grid) return;
     if (!BUILD_STALE && grid.childElementCount > 0) return; /* 静态内容已在，直接用 */
     grid.innerHTML = (data.items || []).map(function (v) {
-      return '<div class="video-card"><a href="' + esc(safeUrl(v.u)) + '" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/' + esc(v.id) + '/hqdefault.jpg" srcset="https://i.ytimg.com/vi/' + esc(v.id) + '/mqdefault.jpg 320w, https://i.ytimg.com/vi/' + esc(v.id) + '/hqdefault.jpg 480w, https://i.ytimg.com/vi/' + esc(v.id) + '/maxresdefault.jpg 1280w" sizes="(max-width: 600px) 100vw, 50vw" width="480" height="360" alt="' + esc(v.t) + '" loading="lazy"></a><div><strong><a href="' + esc(safeUrl(v.u)) + '" target="_blank" rel="noopener">' + esc(v.t) + '</a></strong>' + esc(v.d) + '</div></div>';
+      return '<div class="video-card"><a href="' + esc(safeUrl(v.u)) + '" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/' + esc(v.id) + '/maxresdefault.jpg" srcset="https://i.ytimg.com/vi/' + esc(v.id) + '/mqdefault.jpg 320w, https://i.ytimg.com/vi/' + esc(v.id) + '/maxresdefault.jpg 1280w" sizes="(max-width: 600px) 100vw, 50vw" width="1280" height="720" onerror="this.onerror=null;this.src=&#39;https://i.ytimg.com/vi/' + esc(v.id) + '/hqdefault.jpg&#39;"  alt="' + esc(v.t) + '" loading="lazy"></a><div><strong><a href="' + esc(safeUrl(v.u)) + '" target="_blank" rel="noopener">' + esc(v.t) + '</a></strong>' + esc(v.d) + '</div></div>';
     }).join('');
   }
   function renderArchive(data) {

@@ -146,11 +146,11 @@ def render_videos(data):
         out.append(
             '<div class="video-card">'
             f'<a href="{esc(safe_url(v["u"]))}" target="_blank" rel="noopener">'
-            f'<img src="https://i.ytimg.com/vi/{esc(v["id"])}/hqdefault.jpg" '
+            f'<img src="https://i.ytimg.com/vi/{esc(v["id"])}/maxresdefault.jpg" '
             f'srcset="https://i.ytimg.com/vi/{esc(v["id"])}/mqdefault.jpg 320w, '
-            f'https://i.ytimg.com/vi/{esc(v["id"])}/hqdefault.jpg 480w, '
             f'https://i.ytimg.com/vi/{esc(v["id"])}/maxresdefault.jpg 1280w" '
-            'sizes="(max-width: 600px) 100vw, 50vw" width="480" height="360" '
+            'sizes="(max-width: 600px) 100vw, 50vw" width="1280" height="720" '
+            f'onerror="this.onerror=null;this.src=&#39;https://i.ytimg.com/vi/{esc(v["id"])}/hqdefault.jpg&#39;" '
             f'alt="{esc(v["t"])}" loading="lazy"></a>'
             f'<div><strong><a href="{esc(safe_url(v["u"]))}" target="_blank" rel="noopener">{esc(v["t"])}</a></strong>'
             f'{esc(v["d"])}</div></div>')
