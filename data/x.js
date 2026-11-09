@@ -1,6 +1,39 @@
 window.SITE_X = {
   "news": [
     {
+      "hour": "2026-11-09 13:00",
+      "rows": [
+        {
+          "topic": "蘋果加速 Siri 智能體化，iOS 27.3 先上自家應用控制",
+          "desc": "新任 CEO 施壓加快 Siri 路線圖，2027 年春季再開放第三方應用動作",
+          "time": "11-09",
+          "url": "https://killtheai.com/news/top-10-ai-news-today-november-9-2026/",
+          "label": "AI 新聞彙總"
+        },
+        {
+          "topic": "Anthropic 斥資 34 億美元訂購燃氣發電機保數據中心供電",
+          "desc": "接手 OnePWR 現有訂單、發電 1.7GW，交易 9 月達成、11 月 8 日才曝光",
+          "time": "11-09",
+          "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-monday-november-9-2026/",
+          "label": "The Neuron 報道"
+        },
+        {
+          "topic": "英偉達要求東南亞客戶註冊 Fleet Intelligence 追蹤芯片流向",
+          "desc": "想成為官方雲合作夥伴須先登記系統，防芯片走私轉運",
+          "time": "11-09",
+          "url": "https://www.dailyaithread.com/en/",
+          "label": "Daily AI Thread"
+        },
+        {
+          "topic": "AMD 收購李飛飛創立的 World Labs，作價超 80 億美元",
+          "desc": "AMD 加碼世界模型佈局，Yann LeCun 創業公司亦獲超 10 億美元融資",
+          "time": "11-09",
+          "url": "https://www.dailyaithread.com/en/",
+          "label": "Daily AI Thread"
+        }
+      ]
+    },
+    {
       "hour": "2026-11-09 12:00",
       "rows": [
         {
@@ -167,6 +200,10 @@ window.SITE_X = {
     }
   ],
   "wool": [
+    {
+      "hour": "2026-11-09 13:00",
+      "rows": []
+    },
     {
       "hour": "2026-11-09 12:00",
       "rows": []
