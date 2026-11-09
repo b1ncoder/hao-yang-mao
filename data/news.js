@@ -1,72 +1,73 @@
 window.SITE_NEWS = {
-  "updated": "2026-11-09 08:30",
+  "updated": "2026-11-09 11:31",
   "items": [
-    {
-      "t": "苹果：App Store 已有超 10 万款适配 iPhone Duo 的应用程序",
-      "u": "https://www.ithome.com/1/024/034.htm",
+{
+      "t": "微信鸿蒙版 App 安装量超 9000 万次，华为 HarmonyOS 终端用户数预计本月突破 1 亿大关",
+      "u": "https://www.ithome.com/1/024/099.htm",
       "s": "IT之家",
-      "d": "11-09 08:15"
+      "d": "11-09 11:24"
     },
-    {
-      "t": "OpenAI Valuation Hits $1.25 Trillion in New Funding Round - PYMNTS.com",
-      "u": "https://news.google.com/rss/articles/CBMitAFBVV95cUxON0FRR1p0bktGRUNxcjdhcmRhdXN6MUlTWl83cnloMnlJMWxHbk0wV3dBVzVPWlZtWXl2ZzgwUm1HTGtHZ2NIbEc4Q1FxbWVvX2FKOUpSeFRkZlNjRFFOY1BwUzFSaHNISDBDeE1rUGZqSTQ1bWV6Tm1qbW9JM3V3TkxZTTg3aWJmdGUwMUJzbnVNbk1iODNlak9uTlFmY1lHRVJOenBrME8yYlFPcV9HSWdKUnc?oc=5",
-      "s": "Google News",
-      "d": "11-09 08:06",
-      "zh": "OpenAI 新一輪融資估值達 1.25 兆美元"
-    },
-    {
-      "t": "Sources: Marco Rubio oversaw the drafting of a classified memo this spring warning Trump admin that Jensen Huang was in a close relationship with a Chinese spy (New York Times)",
-      "u": "https://www.techmeme.com/261108/p17#a261108p17",
+{
+      "t": "Tencent's chief AI scientist Yao Shunyu says AI's bio abilities will soon make it \"possible to do harm\" and Anthropic has a \"strong argument\" for closed models (Vincent Chow/South China Morning Post)",
+      "u": "https://www.techmeme.com/261108/p21#a261108p21",
       "s": "Techmeme",
-      "d": "11-09 07:55",
-      "zh": "消息稱盧比奧今年春天主導起草機密備忘錄，警告特朗普政府黃仁勳與一名中國間諜關係密切"
+      "d": "11-09 11:15",
+      "zh": "騰訊首席 AI 科學家姚順雨稱 AI 的生物能力很快將「可能造成傷害」，Anthropic 支持封閉模型「很有道理」"
     },
-    {
-      "t": "古尔曼：苹果最早明年推出自主代理式 Siri，主动代用户完成任务",
-      "u": "https://www.ithome.com/1/024/029.htm",
+{
+      "t": "背屏支持心率血氧检测：荣耀 700 系列手机四色官图公布",
+      "u": "https://www.ithome.com/1/024/089.htm",
       "s": "IT之家",
-      "d": "11-09 07:51"
+      "d": "11-09 11:10"
     },
-    {
-      "t": "Herb Sutter: When a language's creator and its owners strongly disagree [pdf]",
-      "u": "https://isocpp.org/files/papers/P4454R0.pdf",
+{
+      "t": "Nvidia is investigating Jensen Huang’s relationship with a Chinese spy",
+      "u": "https://www.theverge.com/ai-artificial-intelligence/1029562/nvidia-investigating-jensen-huang-relationship-chinese-spy",
+      "s": "The Verge",
+      "d": "11-09 10:24",
+      "zh": "英偉達正調查黃仁勳與一名中國間諜的關係"
+    },
+{
+      "t": "Job listings show Amazon is building a \"new-to-world\" home robot to operate \"alongside family members\", after its $1,450 Astro reached only a few thousand homes (Annie Palmer/CNBC)",
+      "u": "https://www.techmeme.com/261108/p20#a261108p20",
+      "s": "Techmeme",
+      "d": "11-09 10:20",
+      "zh": "招聘信息顯示亞馬遜正在打造一款全新的家用機器人"
+    },
+{
+      "t": "Unlocking any car from X brand in most of the world",
+      "u": "https://shubs.io/unlocking-any-car-from-x-brand-in-most-of-the-world/",
       "s": "Hacker News",
-      "d": "11-09 07:28",
-      "zh": "Herb Sutter：當語言創造者與擁有者意見嚴重分歧時"
+      "d": "11-09 08:10",
+      "zh": "全球大多數某品牌汽車可被解鎖"
     },
-    {
-      "t": "Sources: officials at the Commerce Department's AI safety center CAISSI were asked to informally report to a White House office, raising independence concerns (Garance Burke/Associated Press)",
-      "u": "https://www.techmeme.com/261108/p16#a261108p16",
+{
+      "t": "Epic Games Launcher is coming to SteamOS",
+      "u": "https://www.theverge.com/games/1029557/epic-games-launcher-is-coming-to-steamos",
+      "s": "The Verge",
+      "d": "11-09 04:52",
+      "zh": "Epic 遊戲啟動器即將登陸 SteamOS"
+    },
+{
+      "t": "DeepSeek says its open-source agent app Harness hit 1.54M DAUs on November 4, less than three months after launch, and uses ~92T tokens a day, or ~60M per user (Saritha Rai/Bloomberg)",
+      "u": "https://www.techmeme.com/261108/p12#a261108p12",
       "s": "Techmeme",
-      "d": "11-09 06:55",
-      "zh": "消息稱美國商務部 AI 安全中心官員被要求向白宮辦公室非正式匯報，引發獨立性擔憂"
+      "d": "11-09 04:10",
+      "zh": "DeepSeek 稱其開源智能體應用 Harness 11 月 4 日日活達 154 萬"
     },
-    {
-      "t": "‘AI clog’: UK public bodies battle onslaught of chatbot-generated complaints - The Guardian",
-      "u": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNOW1WLUp3ZVE4OWpCZFlzazVycDF6bWFRcVdKUE1kZ0lKdW92WEM2UnRLWUtvbTNhTDJUQ2ZLMEpDODZqbE1LbEdseW9TUHNEUUtfdmdaR0ZqRGhiMjNhOXNPTVhGcmlBcGUwbFl2VUtnM3N4SzRGTmZSaEp0R2tCNVNkNFZKMS1UMkRBUVp6Rm13Q1ZuYkhmcEl3UjVrbG9fX1ZRMFNjUjF0VFVUWmI5dVZ1aWMxSGZSUDl4Z1NtUHBzbEMwYnppWWdmczVGQQ?oc=5",
-      "s": "Google News",
-      "d": "11-09 06:51",
-      "zh": "「AI 堵塞」：英國公共機構疲於應付聊天機器人生成的大量投訴"
+{
+      "t": "Apple is racing to make Siri more agentic",
+      "u": "https://www.theverge.com/ai-artificial-intelligence/1029552/apple-siri-ai-agentic",
+      "s": "The Verge",
+      "d": "11-09 03:18",
+      "zh": "蘋果正加速讓 Siri 具備更多智能體能力"
     },
-    {
-      "t": "派早报：特斯拉将停产 Cybertruck",
-      "u": "https://sspai.com/post/118805",
-      "s": "少数派",
-      "d": "11-09 06:41"
-    },
-    {
-      "t": "RBA’s Hunter Says AI Boom Will Put Near-Term Pressure on Prices - Bloomberg",
-      "u": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQQVAwU2QwNnU3R0dQVlFPcmhqODhXVVlfMXhJZ2l3QS0zVlZYNjVvZm1KYkhEVklBOWlIMEZNMkl2SkFrNFBGWURJR1MtejI4QjRZbGwyTHJMQkR5NGxXZEU0Z0VJZlBOS2pMamNFV3N1VW9OUXd0TUVFc1FqME8zNzVwU3ZTeFhQVmdTb0NBNW5JcGlURTN0MHRrZXl2c1VwVlFIeF9HWmVpdm9IWnZpWnNNSzk?oc=5",
-      "s": "Google News",
-      "d": "11-09 06:30",
-      "zh": "澳洲央行官員稱 AI 熱潮將給物價帶來短期上行壓力"
-    },
-    {
-      "t": "Apps to distract you from the endless cycle of doomscrolling",
-      "u": "https://techcrunch.com/2026/11/08/apps-to-distract-you-from-the-endless-cycle-of-doomscrolling/",
-      "s": "TechCrunch",
-      "d": "11-09 06:00",
-      "zh": "幫你擺脫無止境刷手機循環的 App"
+{
+      "t": "Elvis and Eminem rights holders are suing Suno",
+      "u": "https://www.theverge.com/ai-artificial-intelligence/1029533/elvis-eminem-suno-ai-music-clone-lawsuit",
+      "s": "The Verge",
+      "d": "11-09 01:23",
+      "zh": "貓王與阿姆的版權方正起訴 Suno"
     }
   ]
 };
