@@ -1,6 +1,39 @@
 window.SITE_X = {
   "news": [
     {
+      "hour": "2026-11-09 11:00",
+      "rows": [
+        {
+          "topic": "三星美國德州晶片廠 12 月試運行",
+          "desc": "泰勒新廠 12 月中下旬試產，2027 年量產，2nm 製程將為特斯拉生產下一代 AI6 晶片",
+          "time": "11-09",
+          "url": "https://www.thehindubusinessline.com/info-tech/samsungs-us-chip-plant-nears-trial-run-in-december-mass-production-planned-for-2027/article71681346.ece",
+          "label": "印度商業線報導"
+        },
+        {
+          "topic": "Megazone Cloud 入選 OpenAI 合作夥伴 Select 級",
+          "desc": "韓企獲選 OpenAI 官方合作夥伴網絡 Select 級，合推 ChatGPT Enterprise 與 Codex 落地",
+          "time": "11-09",
+          "url": "https://biz.chosun.com/en/en-it/2026/11/09/K76CS6K2KBAOFHE3AE7DQJKYVE/",
+          "label": "韓媒 ChosunBiz 報導"
+        },
+        {
+          "topic": "智元機器人第 1 萬台個人人形機器人下線",
+          "desc": "11 月 8 日第 1 萬台個人用人形機器人走下生產線",
+          "time": "11-08",
+          "url": "https://kimkj.com/en/daily-briefing-en/?mod=document&uid=21195",
+          "label": "AI 日報摘要"
+        },
+        {
+          "topic": "OpenAI GPT-6 Cyber 登陸 AWS GovCloud",
+          "desc": "網路安全專用模型經 Daybreak Red 上架 AWS GovCloud，僅限授權安全工作使用",
+          "time": "11-09",
+          "url": "https://theanswerengine.news/",
+          "label": "AI 新聞彙總"
+        }
+      ]
+    },
+    {
       "hour": "2026-11-09 10:00",
       "rows": [
         {
@@ -134,6 +167,10 @@ window.SITE_X = {
     }
   ],
   "wool": [
+    {
+      "hour": "2026-11-09 11:00",
+      "rows": []
+    },
     {
       "hour": "2026-11-09 10:00",
       "rows": []
