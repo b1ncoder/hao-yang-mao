@@ -1,6 +1,39 @@
 window.SITE_X = {
   "news": [
     {
+      "hour": "2026-11-09 15:00",
+      "rows": [
+        {
+          "topic": "DeepSeek 智能體應用 Harness 日活破 154 萬",
+          "desc": "上線不到三個月，日耗約 92 萬億 token，還計劃建插件市場",
+          "time": "11-08",
+          "url": "https://aiweekly.co/alerts/deepseek-harness-hits-154m-daily-users-92t-tokens-a-day",
+          "label": "AI Weekly 報道"
+        },
+        {
+          "topic": "英偉達與 Meta 擴大 AI 合作，數十億美元股權投資",
+          "desc": "Meta 將部署英偉達新一代硬件與網絡產品，支撐 AI 智能體與模型",
+          "time": "11-09",
+          "url": "https://kopi.naminest.sg/",
+          "label": "KopitAIm 摘要"
+        },
+        {
+          "topic": "OpenAI 圖像生成升級 2.6，可做動圖 GIF",
+          "desc": "生成速度快約 50%，新增 GIF 與參考圖功能，API 另推 Flare 與 Sunburst 模型",
+          "time": "11-09",
+          "url": "https://betanews.com/article/chatgpt-images-gifs-faster-generation/",
+          "label": "BetaNews 報道"
+        },
+        {
+          "topic": "AI 自主生物實驗室 AutoDNA 登上 Nature",
+          "desc": "核酸實驗流程提速 3.2 倍，11 月 4 日發表於 Nature",
+          "time": "11-09",
+          "url": "https://sxf.si/brief/",
+          "label": "SXF Brief"
+        }
+      ]
+    },
+    {
       "hour": "2026-11-09 14:00",
       "rows": [
         {
@@ -233,6 +266,38 @@ window.SITE_X = {
     }
   ],
   "wool": [
+    {
+      "hour": "2026-11-09 15:00",
+      "rows": [
+        {
+          "post": "国家超算互联网今日开领 1 亿 Tokens",
+          "content": "11 月 9 日起新用户下载登录客户端可领旗舰模型 1 亿 Tokens，另有客户端内旗舰模型词元不限量",
+          "author": "涛哥 AI 工作站",
+          "status": "未核实",
+          "statusClass": "wait",
+          "url": "https://www.tgjai.cn/article/free-ai-quota-20261109.html",
+          "label": "看来源"
+        },
+        {
+          "post": "ZCode 周末免费领 5 亿 GLM-5.3-Flash Tokens",
+          "content": "免费账号可领，额度 11 月 6 日 23:00 至 11 月 9 日 09:00，过期作废",
+          "author": "AI 优惠雷达",
+          "status": "免费已结束",
+          "statusClass": "dead",
+          "url": "https://www.aipromonow.com/promos/zcode-weekend-build-glm53-flash-5e8-nov9-2026?utm_source=rss&utm_medium=referral&utm_campaign=deal_updates",
+          "label": "看来源"
+        },
+        {
+          "post": "CapCut Pro 新用户 7 天免费试用",
+          "content": "桌面版新用户 7 天免费试用，需绑卡或 PayPal，试用期内取消不扣费",
+          "author": "Everysaving",
+          "status": "未核实",
+          "statusClass": "wait",
+          "url": "https://www.everysaving.hk/store/capcut.com",
+          "label": "看来源"
+        }
+      ]
+    },
     {
       "hour": "2026-11-09 14:00",
       "rows": []
