@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://freenofree.ct.ws/sitemap.xml

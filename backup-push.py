@@ -30,9 +30,13 @@ MANIFEST = "/tmp/wool-backup-manifest"
 GH = "/opt/hatch/bin/github"
 
 FILES = [
-    "index.html",
+    "index.html",          # 生成物（build-static.py 产出，不要手改）
+    "index.template.html", # 首页模板（改结构改这里，再跑构建）
+    "build-static.py",     # 构建脚本：繁简转换 + 静态预渲染 + 合并 bundle
+    "convert-t2s.py",      # 繁简转换（构建脚本内部也会跑）
     "style.css",
-    "app.js",
+    "app.js",              # 交互逻辑源码（bundle.js 由它 + 数据文件合成）
+    "bundle.js",           # 生成物：数据 + app.js 合一，首页唯一加载的脚本
     "data/news.js",
     "data/x.js",
     "data/sec-pro.js",
@@ -44,12 +48,20 @@ FILES = [
     "data/sec-server.js",
     "data/sec-videos.js",
     "data/sec-archive.js",
+    ".htaccess",
+    "robots.txt",
+    "sitemap.xml",
+    "404.html",
+    "feed.xml",
     "README.md",
+    "OPTIMIZATION-NOTES.md",
     "split-page.py",
     "split-sections.py",
     "push-page.py",
     "backup-push.py",
 ]
+# og.png 是二进制文件，github push-files 只接受 UTF-8 快照，无法推送，
+# 故不列入备份清单（本地与 InfinityFree 上各有一份）。
 
 
 def blob_sha(data: bytes) -> str:
@@ -85,7 +97,7 @@ def main():
             return 1
         with open(path, "rb") as f:
             data = f.read()
-        data.decode("utf-8")  # raises on non-UTF-8
+        data.decode("utf-8")  # 清单内全是文本文件；二进制文件不进备份
         contents[rel] = data
         total += len(data)
     if total > 16 * 1024 * 1024:

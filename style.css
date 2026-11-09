@@ -1,4 +1,8 @@
 * { box-sizing: border-box; }
+  html { scroll-padding-top: 56px; scroll-behavior: smooth; }
+  section { scroll-margin-top: 56px; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
+  a:focus-visible, button:focus-visible, input:focus-visible, .stat:focus-visible { outline: 2px solid #2563eb; outline-offset: 2px; }
   body { font-family: -apple-system, "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif; margin: 0; background: #f6f7f9; color: #222; line-height: 1.6; }
   header { background: #111827; color: #fff; padding: 36px 20px 28px; text-align: center; }
   header h1 { margin: 0 0 8px; font-size: 28px; }
@@ -27,12 +31,12 @@
   a:hover { text-decoration: underline; }
   .videos { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
   .video-card { border: 1px solid #e5e7eb; border-radius: 10px; overflow: hidden; }
-  .video-card img { width: 100%; display: block; }
+  .video-card img { width: 100%; display: block; aspect-ratio: 16 / 9; object-fit: cover; }
   .video-card div { padding: 10px 12px; font-size: 13px; }
   .video-card strong { font-size: 14px; display: block; margin-bottom: 4px; }
   @media (max-width: 600px) { .videos { grid-template-columns: 1fr; } }
-  footer { text-align: center; color: #9ca3af; font-size: 13px; padding: 0 16px 32px; }
-  nav { overflow-x: auto; white-space: nowrap; scrollbar-width: none; }
+  footer { text-align: center; color: #6b7280; font-size: 13px; padding: 0 16px 32px; }
+  nav { overflow-x: auto; white-space: nowrap; scrollbar-width: none; -webkit-mask-image: linear-gradient(90deg, #000 92%, transparent); mask-image: linear-gradient(90deg, #000 92%, transparent); }
   nav::-webkit-scrollbar { display: none; }
   .hero-sub { max-width: 640px; margin: 8px auto 0; }
   .btn-channel { display: inline-block; background: #ef4444; color: #fff; padding: 8px 20px; border-radius: 20px; font-size: 14px; margin-top: 12px; font-weight: 600; }
@@ -58,14 +62,33 @@
   .x-tags button { border: 1px solid #1d9bf0; background: #fff; color: #1d9bf0; border-radius: 999px; padding: 3px 12px; font-size: 13px; cursor: pointer; }
   .x-tags button.on { background: #1d9bf0; color: #fff; }
   .x-tags-note { font-size: 12px; color: #666; }
-  .news-updated { font-size: 12px; color: #9ca3af; margin: 0 0 4px; }
+  .news-updated { font-size: 12px; color: #6b7280; margin: 0 0 4px; }
   .news-item { border-bottom: 1px solid #f0f0f0; padding: 10px 0; }
   .news-item:last-child { border-bottom: none; }
   .news-bi { display: grid; grid-template-columns: 1fr 1fr; gap: 2px 16px; }
   .news-en { font-weight: 600; }
   .news-en a { color: #111827; }
   .news-zh { color: #4b5563; }
-  .news-meta { font-size: 12px; color: #9ca3af; margin-top: 4px; }
+  .news-meta { font-size: 12px; color: #6b7280; margin-top: 4px; }
+  .visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  @media (max-width: 600px) {
+    .stats { grid-template-columns: repeat(3, 1fr); }
+    .stat { padding: 10px 6px 9px; }
+    .stat b { font-size: 20px; }
+  }
+  @media (prefers-color-scheme: dark) {
+    body { background: #0f172a; color: #e2e8f0; }
+    section, .stat, .search-wrap input, #noresult { background: #1e293b; color: #e2e8f0; border-color: #334155; }
+    th { background: #334155; color: #e2e8f0; }
+    th, td { border-color: #334155; }
+    tr:hover { background: #273449; }
+    h2 { border-bottom-color: #334155; }
+    .news-en a { color: #f1f5f9; }
+    .news-zh { color: #cbd5e1; }
+    .note, .stat span, .news-meta, .news-updated, footer { color: #94a3b8; }
+    .x-tags button { background: #1e293b; }
+    .video-card { border-color: #334155; }
+  }
   @media (max-width: 600px) { .news-bi { grid-template-columns: 1fr; } }
   @media (max-width: 600px) {
     header h1 { font-size: 24px; }

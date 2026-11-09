@@ -1,0 +1,23 @@
+# 薅羊毛情报站缓存与安全头（InfinityFree / Apache）
+# HTML 与每天更新的数据文件：不长期缓存，每次重新验证
+<IfModule mod_headers.c>
+  <FilesMatch "^(index\.html|404\.html)$">
+    Header set Cache-Control "no-cache, must-revalidate"
+  </FilesMatch>
+  <FilesMatch "^data/.*\.js$">
+    Header set Cache-Control "public, max-age=300, must-revalidate"
+  </FilesMatch>
+  <FilesMatch "\.(css|js)$">
+    Header set Cache-Control "public, max-age=86400, must-revalidate"
+  </FilesMatch>
+  Header set X-Content-Type-Options "nosniff"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+  Header set X-Frame-Options "SAMEORIGIN"
+</IfModule>
+# 强制 HTTPS
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTPS} off
+  RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>
+ErrorDocument 404 /404.html
