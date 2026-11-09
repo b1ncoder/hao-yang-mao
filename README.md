@@ -21,7 +21,7 @@
 | `bundle.js` | 生成物：全部数据文件 + `app.js` 合一 | 由构建生成，不要手改 | `/htdocs/bundle.js`（每次构建后都传） |
 | `build-static.py` | 构建脚本 | 改构建逻辑 | 不上传 |
 | `style.css` | 全部样式 | 改样式 | `/htdocs/style.css` |
-| `app.js` | 渲染 + 统计 + 时段切换 + 搜索 | 改交互逻辑 | `/htdocs/app.js` |
+| `app.js` | 渲染 + 统计 + 时段切换 + 搜索 + 主题切换 | 改交互逻辑 | 不单独上传，随 `bundle.js` 一起走 |
 | `data/news.js` | 最新科技新闻（10 条） | 新闻 3 小时刷新 | 改完跑构建，传 `bundle.js` + `index.html` |
 | `data/x.js` | X 新闻 / X 羊毛小时快照（各留 12 小时） | X 每小时搜集 | 改完跑构建，传 `bundle.js` + `index.html` |
 | `data/sec-pro.js` | Pro 活动表 | Pro 搜集有变化 | 改完跑构建，传 `bundle.js` + `index.html` |
@@ -55,6 +55,8 @@
 ## 渲染与统计
 
 首页内容已由构建静态写进 HTML；`bundle.js`（数据 + `app.js`）加载后只做 hydration：内容已在就跳过渲染（stamp 不一致时强制重渲染），然后接线时段切换、搜索，自动重算统计卡（栏目按表行数、X 按可见快照行数）。X 两区时段切换是**各管各的**（点哪个区的标签只切本区）。
+
+**日间/夜间模式（2026-11-09 加）：**导航栏右侧有切换按钮（内联 SVG 太阳/月亮图标 + “夜间模式”/“日间模式”文字，`aria-pressed` 与 `aria-label` 随状态变）。两套配色是 `style.css` 里的 CSS 变量，`html[data-theme="light"|"dark"]` 驱动；首次访问默认跟随系统，手动选过后存 `localStorage`（键 `theme`）并优先于系统；模板 head 里有内联小脚本，在 CSS 加载前就定好 `data-theme`，防闪烁。切换时同步更新 `theme-color` meta（浅色 `#111827`、深色 `#0f172a`）。无 JS 时按钮由 `<noscript>` 隐藏，页面按浅色默认主题显示（系统深色时靠 CSS 的 `prefers-color-scheme` 回退）。
 
 ## 回滚
 

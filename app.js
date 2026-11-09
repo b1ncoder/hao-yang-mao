@@ -11,6 +11,47 @@
     return (/^https?:\/\//i.test(v)) ? v : '#';
   }
 
+  /* ---------- 日间/夜间模式：html[data-theme] 驱动两套 CSS 变量 ----------
+     head 内联脚本已在 CSS 加载前按 localStorage/系统设好 data-theme；
+     这里只做按钮同步、点击切换（存 localStorage，优先于系统设置），
+     未手动选过时跟随系统切换。 */
+  var THEME_KEY = 'theme';
+  function applyTheme(t, save) {
+    if (t !== 'light' && t !== 'dark') t = 'light';
+    document.documentElement.setAttribute('data-theme', t);
+    var meta = document.querySelector('meta[name="theme-color"]');
+    if (meta) meta.setAttribute('content', t === 'dark' ? '#0f172a' : '#111827');
+    var btn = document.getElementById('theme-toggle');
+    if (btn) {
+      var dark = t === 'dark';
+      btn.setAttribute('aria-pressed', dark ? 'true' : 'false');
+      btn.setAttribute('aria-label', dark ? '切换到日间模式' : '切换到夜间模式');
+    }
+    if (save) { try { localStorage.setItem(THEME_KEY, t); } catch (e) {} }
+  }
+  function initTheme() {
+    var cur = document.documentElement.getAttribute('data-theme');
+    if (cur !== 'light' && cur !== 'dark') {
+      var sysDark = false;
+      try { sysDark = !!(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches); } catch (e) {}
+      cur = sysDark ? 'dark' : 'light';
+    }
+    applyTheme(cur, false);
+    var btn = document.getElementById('theme-toggle');
+    if (btn) btn.addEventListener('click', function () {
+      applyTheme(document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark', true);
+    });
+    try {
+      var mq = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)');
+      if (mq && mq.addEventListener) mq.addEventListener('change', function (e) {
+        var saved = null;
+        try { saved = localStorage.getItem(THEME_KEY); } catch (err) {}
+        if (saved !== 'light' && saved !== 'dark') applyTheme(e.matches ? 'dark' : 'light', false);
+      });
+    } catch (e) {}
+  }
+  initTheme();
+
   /* ---------- 新闻区：data/news.js -> #news-list ---------- */
   /* 静态预渲染后页面里已有内容时跳过重渲染；bundle 数据比静态内容新时强制重渲染（自愈） */
   var BUILD_STALE = (function () {
