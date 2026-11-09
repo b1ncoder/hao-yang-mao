@@ -1,6 +1,39 @@
 window.SITE_X = {
   "news": [
     {
+      "hour": "2026-11-09 14:00",
+      "rows": [
+        {
+          "topic": "特朗普稱不反對 AI 安全護欄，但不想落後中國",
+          "desc": "60 分鐘專訪稱風險可控，願與民主黨合作設保障，但未提具體法案",
+          "time": "11-09",
+          "url": "https://paktechstan.com/article/trump-says-he-doesn-t-mind-ai-guardrails-in-60-minutes-interview-but-warns-against-falling-behind-china",
+          "label": "Paktechstan 報道"
+        },
+        {
+          "topic": "阿里巴巴實測：頂尖編碼智能體僅 26.4% 任務完美完成",
+          "desc": "真實編碼任務基準顯示智能體仍常出錯，與舊基準高分形成反差",
+          "time": "11-09",
+          "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-monday-november-9-2026/",
+          "label": "The Neuron 報道"
+        },
+        {
+          "topic": "Shield AI 收購雷達廠商 Echodyne，融資 25 億美元",
+          "desc": "估值 288 億美元，國防 AI 佈局再加碼",
+          "time": "11-09",
+          "url": "https://dev.to/hiroki-ii-ai/ai-daily-digest-november-9-2026-mistral-opens-le-chonk-weights-grok-api-watermarks-by-default-2gdm",
+          "label": "AI Daily 摘要"
+        },
+        {
+          "topic": "Anthropic 向美國付費用戶開放 Claude 個人理財功能",
+          "desc": "可連結銀行帳戶查詢開支，僅供查看、不能轉帳",
+          "time": "11-09",
+          "url": "https://kimkj.com/en/daily-briefing-en/?mod=document&uid=21195",
+          "label": "AI 日報摘要"
+        }
+      ]
+    },
+    {
       "hour": "2026-11-09 13:00",
       "rows": [
         {
@@ -200,6 +233,10 @@ window.SITE_X = {
     }
   ],
   "wool": [
+    {
+      "hour": "2026-11-09 14:00",
+      "rows": []
+    },
     {
       "hour": "2026-11-09 13:00",
       "rows": []
