@@ -1,6 +1,39 @@
 window.SITE_X = {
   "news": [
     {
+      "hour": "2026-11-09 10:00",
+      "rows": [
+        {
+          "topic": "LG 开放 K-EXAONE 2.5 API 免费使用",
+          "desc": "在首尔 NVIDIA AI Day 上宣布，领 API Key 即可免费调用，性能较 8 月版提升超 70%",
+          "time": "11-09",
+          "url": "https://biz.chosun.com/en/en-industry/2026/11/09/KQD3SZX65ZBJNODUZDZHT3SDT4/",
+          "label": "韩媒 ChosunBiz 报道"
+        },
+        {
+          "topic": "DeepMind 气旋预报多争取一整天预警时间",
+          "desc": "WeatherNext Cyclones 登上 Nature，代码与模型权重已开源",
+          "time": "11-09",
+          "url": "https://dev.to/hiroki-ii-ai/ai-daily-digest-november-9-2026-mistral-opens-le-chonk-weights-grok-api-watermarks-by-default-2gdm",
+          "label": "AI Daily 摘要"
+        },
+        {
+          "topic": "微软 50 人 AI Frontiers 研究组关闭",
+          "desc": "重组并入 Microsoft AI，聚焦前沿研究的独立小组解散",
+          "time": "11-09",
+          "url": "https://killtheai.com/news/top-10-ai-news-today-november-9-2026/",
+          "label": "AI 新闻汇总"
+        },
+        {
+          "topic": "Check Point：单人用 ARTEX 智能体跑犯罪活动",
+          "desc": "发现 1608 个公开可达的 ARTEX 面板，三起活动每起成本仅数百美元",
+          "time": "11-09",
+          "url": "https://agentnewsdaily.com/brief/2026-11-09",
+          "label": "Agent News Daily"
+        }
+      ]
+    },
+    {
       "hour": "2026-11-09 09:00",
       "rows": [
         {
@@ -101,6 +134,10 @@ window.SITE_X = {
     }
   ],
   "wool": [
+    {
+      "hour": "2026-11-09 10:00",
+      "rows": []
+    },
     {
       "hour": "2026-11-09 09:00",
       "rows": []
