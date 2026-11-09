@@ -1,6 +1,53 @@
 window.SITE_X = {
   "news": [
     {
+      "hour": "2026-11-09 16:00",
+      "rows": [
+        {
+          "topic": "英伟达联手 Rebellions 与 SK 电讯推主权 AI",
+          "desc": "三方用 NVLink Fusion 连接国产 NPU 与英伟达平台，在 SK 电讯数据中心落地韩国主权 AI",
+          "time": "11-09",
+          "url": "https://www.tradingview.com/news/globenewswire:a02cf44a6094b:0-nvidia-rebellions-and-sk-telecom-announce-collaboration-to-advance-sovereign-ai-infrastructure-with-nvidia-nvlink-fusion/",
+          "label": "TradingView 报道"
+        },
+        {
+          "topic": "英伟达携现代、斗山、LG、SK 海力士推 Physical AI",
+          "desc": "AI 智能体把机器人仿真环境搭建从数月缩到一周内，加速数字孪生与精密打磨落地",
+          "time": "11-09",
+          "url": "https://biz.chosun.com/en/en-it/2026/11/09/I3KFP73KERGPVNNQAMDKTDTADA/",
+          "label": "韩媒 ChosunBiz 报道"
+        },
+        {
+          "topic": "MIT 发布通用物理模拟器 WorldParticle",
+          "desc": "单个 Transformer 模拟沙、布、流体与蛋白质折叠等六种物理行为，登 ACM 图形学汇刊",
+          "time": "11-09",
+          "url": "https://njldesignlab.com/progress-brief-2026-11-09/",
+          "label": "NJL Design Lab 报道"
+        },
+        {
+          "topic": "MIT FLEX 让机器人读懂指令言外之意",
+          "desc": "从口头纠正推断真实意图而非字面执行，论文登 arXiv，11 月 9 日 MIT News 发布",
+          "time": "11-09",
+          "url": "https://news.mit.edu/2026/ai-assisted-learning-platform-helps-robots-reason-beyond-literal-commands-1109",
+          "label": "MIT News 报道"
+        },
+        {
+          "topic": "OpenAI 把攻破它的黑客变成安全伙伴",
+          "desc": "11 月 6 日宣布与 Hacktron 合作，此前对方经漏洞赏金计划发现两处未知漏洞",
+          "time": "11-09",
+          "url": "https://njldesignlab.com/progress-brief-2026-11-09/",
+          "label": "NJL Design Lab 报道"
+        },
+        {
+          "topic": "AutoDNA 自主生物实验室登 Nature",
+          "desc": "AI 原生实验室协调 20 多台仪器、执行 1.1 万步核酸流程，并行速度快 3.2 倍",
+          "time": "11-09",
+          "url": "https://sxf.si/brief/",
+          "label": "SXF Brief"
+        }
+      ]
+    },
+    {
       "hour": "2026-11-09 15:00",
       "rows": [
         {
@@ -301,6 +348,104 @@ window.SITE_X = {
     }
   ],
   "wool": [
+    {
+      "hour": "2026-11-09 16:00",
+      "rows": [
+        {
+          "post": "国家超算互联网 SCNet 新用户 1 亿 Tokens",
+          "content": "11 月 9 日起新用户下载登录客户端可领旗舰模型 1 亿 Tokens，另有客户端内旗舰模型词元不限量",
+          "author": "新浪财经",
+          "status": "已验证",
+          "statusClass": "ok",
+          "note": "仅限新用户、仅客户端内使用、限科学计算智能体、非通用 API；按 11 月 30 日规划最稳",
+          "url": "https://finance.sina.com.cn/stock/t/2026-11-06/doc-inixuuqy5472041.shtml",
+          "label": "看来源"
+        },
+        {
+          "post": "百度千帆 17 个指定模型各 100 万 Token",
+          "content": "首次开通千帆大模型自动发放指定模型免费额度，每笔额度 3 个月有效",
+          "author": "百度智能云",
+          "status": "已验证",
+          "statusClass": "ok",
+          "note": "仅首次开通、仅指定 17 个模型、3 个月从开通日起算、需实名；超额转按量",
+          "url": "https://cloud.baidu.com/doc/qianfan/s/Imi2rpirg",
+          "label": "看来源"
+        },
+        {
+          "post": "Devin SWE-2 Flash 免费到 11 月 30 日",
+          "content": "Devin 桌面端与 CLI 内免费使用 SWE-2 Flash，11 月 4 日上线",
+          "author": "Cognition",
+          "status": "已验证",
+          "statusClass": "ok",
+          "note": "需 Devin Pro/Max/Teams 订阅（订阅费照交）、免费账号不可用；仅桌面端/CLI，无 API；免费至 11 月 30 日",
+          "url": "https://cognition.ai/blog/swe-2-flash",
+          "label": "看来源"
+        },
+        {
+          "post": "天工双 11 视频模型 0 积分",
+          "content": "天工 SkyProduction 双 11 视频模型 0 积分，11 月 11 日 24:00 截止",
+          "author": "涛哥 AI 工作站",
+          "status": "未核实",
+          "statusClass": "wait",
+          "url": "https://www.tgjai.cn/article/free-ai-quota-20261109.html",
+          "label": "看来源"
+        },
+        {
+          "post": "智谱 AutoClaw 5000 万 Token 已清零",
+          "content": "智谱 AutoClaw 的 5000 万 Token 已于 11 月 8 日 23:59 清零作废，不再可领",
+          "author": "涛哥 AI 工作站",
+          "status": "免费已结束",
+          "statusClass": "dead",
+          "url": "https://www.tgjai.cn/article/free-ai-quota-20261109.html",
+          "label": "看来源"
+        },
+        {
+          "post": "OpenCode Zen 免费模型轮换至 10 款",
+          "content": "新增 Crouton Alpha、Iceman、Inkling 2 Small 免费档，Jev 1.13 Free 已下线",
+          "author": "iGetoken",
+          "status": "未核实",
+          "statusClass": "wait",
+          "url": "https://igetoken.com/models/opencode/",
+          "label": "看来源"
+        },
+        {
+          "post": "摩尔线程 AI Coding Plan 限时 30 天免费体验",
+          "content": "每日限量 100 名，免费体验 30 天",
+          "author": "赛博鸡蛋",
+          "status": "未核实",
+          "statusClass": "wait",
+          "url": "https://saibodan.com/episodes/deals-2026-11-09",
+          "label": "看来源"
+        },
+        {
+          "post": "华为云码道每日 1000 万免费 Token",
+          "content": "登录即用、当日 0 点清零，仅限码道内使用",
+          "author": "赛博鸡蛋",
+          "status": "未核实",
+          "statusClass": "wait",
+          "url": "https://saibodan.com/episodes/deals-2026-11-09",
+          "label": "看来源"
+        },
+        {
+          "post": "阿里云百炼新用户约 100 万 Token 免费额度",
+          "content": "新用户文本模型约 100 万 Token 免费额度，90 天有效，限华北 2 地域",
+          "author": "赛博鸡蛋",
+          "status": "未核实",
+          "statusClass": "wait",
+          "url": "https://saibodan.com/episodes/deals-2026-11-09",
+          "label": "看来源"
+        },
+        {
+          "post": "Simular Box 免费领一台云电脑",
+          "content": "免费档给一台云端 Linux 桌面，AI 调用走每日免费额度，电脑本体不收费",
+          "author": "赛博鸡蛋",
+          "status": "未核实",
+          "statusClass": "wait",
+          "url": "https://saibodan.com/episodes/deals-2026-11-09",
+          "label": "看来源"
+        }
+      ]
+    },
     {
       "hour": "2026-11-09 15:00",
       "rows": [
