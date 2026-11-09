@@ -185,6 +185,9 @@ def main():
     html = template
     html = html.replace("<body>", f'<body data-build="{stamp}" data-news="{esc(news.get("updated", ""))}" data-x="{esc(x_latest)}">')
     html = html.replace("bundle.js?v=BUILD", f"bundle.js?v={stamp}")
+    # style.css 也按内容哈希加版本：改了样式就换 URL，旧缓存不会继续用老样式
+    style_v = hashlib.sha1((BASE / "style.css").read_bytes()).hexdigest()[:10]
+    html = html.replace("style.css?v=STYLEV", f"style.css?v={style_v}")
     html = html.replace('"dateModified":"2026-11-09"', f'"dateModified":"{updated_date}"')
     html = html.replace('<span id="last-updated">2026-11-09</span>', f'<span id="last-updated">{updated_date}</span>')
     html = html.replace('<span class="last-updated">2026-11-09</span>', f'<span class="last-updated">{updated_date}</span>')
