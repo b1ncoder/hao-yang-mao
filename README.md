@@ -29,7 +29,7 @@
 所有数据文件都是 `window.XXX = {...};` 的 JS 文件（不用 fetch，纯静态托管可用），内容是 JSON。写文件时注意 JSON 转义（标题里的引号、反斜杠要转义），写完用 `node --check <文件>` 检查语法。
 
 - `data/news.js`：`{"updated": "2026-11-09 08:30", "items": [{"t": 标题, "u": 原文链接, "s": 来源, "d": "MM-DD HH:MM", "zh": 中文翻译（仅英文条目有）}]}`
-- `data/x.js`：`{"news": [{"hour": "YYYY-MM-DD HH:00", "rows": [{"topic", "desc", "time": "MM-DD", "url", "label"}]}], "wool": [{"hour", "rows": [{"post", "content", "author", "status": "待核实"|"免费已结束", "statusClass": "wait"|"dead", "url", "label": "看原帖"}]}]}`，快照最新在前；某小时羊毛无新帖时 `rows: []`。
+- `data/x.js`：`{"news": [{"hour": "YYYY-MM-DD HH:00", "rows": [{"topic", "desc", "time": "MM-DD", "url", "label"}]}], "wool": [{"hour", "rows": [{"post", "content", "author", "status": "已验证"|"未核实"|"免费已结束", "statusClass": "ok"|"wait"|"dead", "note": "限制说明（仅已验证行有）", "url", "label": "看原帖"|"看来源"}]}]}`，快照最新在前；每栏每小时最多 10 条（不够不硬凑，重复可收）；某小时羊毛无新线索时 `rows: []`。
 - `data/sec-*.js`（表）：`{"rows": [[单元格, 单元格, ...], ...]}`，每行 4 个单元格。单元格是纯文字字符串，或对象 `{"t": 文字, "u": 链接, "tag": {"text": 标签, "cls": "ok"|"wait"|"dead"|"watch"|"limit"}, "bad": true}`（`bad` 的是红字限制）。第一列自动加粗，`tag` 显示在第一列文字后面。
 - `data/sec-videos.js`：`{"items": [{"id": "YouTube 视频 ID", "t": 标题, "u": 视频链接, "d": 一句话介绍}]}`（缩略图由 `id` 自动拼 `i.ytimg.com`）。
 - `data/sec-archive.js`：`{"items": [{"t": 标题, "tag": {"text", "cls"}, "d": 说明}]}`。

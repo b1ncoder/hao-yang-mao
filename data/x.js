@@ -4,29 +4,64 @@ window.SITE_X = {
       "hour": "2026-11-09 15:00",
       "rows": [
         {
-          "topic": "DeepSeek 智能體應用 Harness 日活破 154 萬",
-          "desc": "上線不到三個月，日耗約 92 萬億 token，還計劃建插件市場",
+          "topic": "貓王版權方與 Eminem 出版商起訴 Suno",
+          "desc": "指控 Suno 未經授權用歌曲訓練模型、生成仿冒人聲，兩案 11 月 6 日立案",
           "time": "11-08",
-          "url": "https://aiweekly.co/alerts/deepseek-harness-hits-154m-daily-users-92t-tokens-a-day",
-          "label": "AI Weekly 報道"
+          "url": "https://tribune.com.pk/story/2639163/elvis-presley-rights-holders-and-eminems-publisher-sue-ai-music-generator-suno?amp=1",
+          "label": "Tribune 報道"
         },
         {
-          "topic": "英偉達與 Meta 擴大 AI 合作，數十億美元股權投資",
-          "desc": "Meta 將部署英偉達新一代硬件與網絡產品，支撐 AI 智能體與模型",
+          "topic": "松下 T-Rex 觸覺雙手機器人 AI 亮相 CoRL",
+          "desc": "指尖觸覺即時修正雙手動作，12 項精細任務成功率 65%，遠高於舊方法 35%",
           "time": "11-09",
-          "url": "https://kopi.naminest.sg/",
-          "label": "KopitAIm 摘要"
+          "url": "https://news.panasonic.com/global/zh-CHS/press/en261105-2",
+          "label": "松下官方新聞稿"
         },
         {
-          "topic": "OpenAI 圖像生成升級 2.6，可做動圖 GIF",
-          "desc": "生成速度快約 50%，新增 GIF 與參考圖功能，API 另推 Flare 與 Sunburst 模型",
+          "topic": "英國部長稱 AI 數據中心建設將繼續推進",
+          "desc": "視數據中心為關鍵基礎設施，增長大臣向金融時報確認繼續支持",
           "time": "11-09",
-          "url": "https://betanews.com/article/chatgpt-images-gifs-faster-generation/",
-          "label": "BetaNews 報道"
+          "url": "https://www.preciseimpact.ai/briefing/ai-news-digest-2026-11-09",
+          "label": "AI Daily Brief"
         },
         {
-          "topic": "AI 自主生物實驗室 AutoDNA 登上 Nature",
-          "desc": "核酸實驗流程提速 3.2 倍，11 月 4 日發表於 Nature",
+          "topic": "騰訊科學家警告 AI 生物風險恐更難控制",
+          "desc": "騰訊首席 AI 科學家姚順雨在香港科學活動上示警模型生物風險",
+          "time": "11-09",
+          "url": "https://www.preciseimpact.ai/briefing/ai-news-digest-2026-11-09",
+          "label": "AI Daily Brief"
+        },
+        {
+          "topic": "中國工信部收緊 AI 智能體終端入網管理",
+          "desc": "發文加強內嵌 AI 助手終端設備的入網管理，手機等設備在列",
+          "time": "11-09",
+          "url": "https://kimkj.com/en/daily-briefing-en/?mod=document&uid=21195",
+          "label": "AI 日報摘要"
+        },
+        {
+          "topic": "OpenAI 自主系統修復 Linux 內核 948 個漏洞",
+          "desc": "展示自主 AI 發現並修復內核安全漏洞，屬當日 AI 新聞亮點",
+          "time": "11-09",
+          "url": "https://theanswerengine.news/",
+          "label": "AI 新聞彙總"
+        },
+        {
+          "topic": "Cloudflare CEO：AI 智能體優化是新版 SEO",
+          "desc": "稱 OpenAI 為爬蟲更新提示付費，網站優化出現新賽道",
+          "time": "11-09",
+          "url": "https://theanswerengine.news/",
+          "label": "AI 新聞彙總"
+        },
+        {
+          "topic": "Anthropic Claude 模型發表物理學手稿",
+          "desc": "11 月 7 日兩篇數學物理手稿涉弱耦合相變與譜界，尚未經同行評審",
+          "time": "11-09",
+          "url": "https://sxf.si/brief/",
+          "label": "SXF Brief"
+        },
+        {
+          "topic": "英偉達發表 FLUX 3 圖像推理加速基準",
+          "desc": "TensorRT LLM VisualGen 讓文生圖快 3.46 倍、圖生圖快 4.45 倍",
           "time": "11-09",
           "url": "https://sxf.si/brief/",
           "label": "SXF Brief"
@@ -270,31 +305,94 @@ window.SITE_X = {
       "hour": "2026-11-09 15:00",
       "rows": [
         {
-          "post": "国家超算互联网今日开领 1 亿 Tokens",
-          "content": "11 月 9 日起新用户下载登录客户端可领旗舰模型 1 亿 Tokens，另有客户端内旗舰模型词元不限量",
-          "author": "涛哥 AI 工作站",
-          "status": "未核实",
+          "post": "國家超算互聯網今日開領 1 億 Tokens",
+          "content": "11 月 9 日起新用戶下載登錄客戶端可領旗艦模型 1 億 Tokens，另有客戶端內旗艦模型詞元不限量",
+          "author": "濤哥 AI 工作站",
+          "status": "未核實",
           "statusClass": "wait",
           "url": "https://www.tgjai.cn/article/free-ai-quota-20261109.html",
-          "label": "看来源"
+          "label": "看來源"
         },
         {
-          "post": "ZCode 周末免费领 5 亿 GLM-5.3-Flash Tokens",
-          "content": "免费账号可领，额度 11 月 6 日 23:00 至 11 月 9 日 09:00，过期作废",
-          "author": "AI 优惠雷达",
-          "status": "免费已结束",
+          "post": "百度千帆 17 個模型各 100 萬 Token",
+          "content": "首次開通千帆大模型自動發放指定模型免費額度，每筆額度 3 個月有效",
+          "author": "濤哥 AI 工作站",
+          "status": "未核實",
+          "statusClass": "wait",
+          "url": "https://www.tgjai.cn/article/free-ai-quota-20261109.html",
+          "label": "看來源"
+        },
+        {
+          "post": "Devin SWE-2 Flash 免費用到 11 月 30 日",
+          "content": "Devin 桌面端與 CLI 內免費使用，官方未公布額度數字，11 月 4 日上線",
+          "author": "濤哥 AI 工作站",
+          "status": "未核實",
+          "statusClass": "wait",
+          "url": "https://www.tgjai.cn/article/free-ai-quota-20261109.html",
+          "label": "看來源"
+        },
+        {
+          "post": "天工雙 11 視頻模型 0 積分",
+          "content": "天工 SkyProduction 雙 11 視頻模型 0 積分，11 月 11 日 24:00 截止",
+          "author": "濤哥 AI 工作站",
+          "status": "未核實",
+          "statusClass": "wait",
+          "url": "https://www.tgjai.cn/article/free-ai-quota-20261109.html",
+          "label": "看來源"
+        },
+        {
+          "post": "智譜 AutoClaw 5000 萬 Token 已清零",
+          "content": "智譜 AutoClaw 的 5000 萬 Token 已於 11 月 8 日 23:59 清零作廢，不再可領",
+          "author": "濤哥 AI 工作站",
+          "status": "免費已結束",
           "statusClass": "dead",
-          "url": "https://www.aipromonow.com/promos/zcode-weekend-build-glm53-flash-5e8-nov9-2026?utm_source=rss&utm_medium=referral&utm_campaign=deal_updates",
-          "label": "看来源"
+          "url": "https://www.tgjai.cn/article/free-ai-quota-20261109.html",
+          "label": "看來源"
         },
         {
-          "post": "CapCut Pro 新用户 7 天免费试用",
-          "content": "桌面版新用户 7 天免费试用，需绑卡或 PayPal，试用期内取消不扣费",
+          "post": "OpenCode Zen 免費模型輪換至 10 款",
+          "content": "新增 Crouton Alpha、Iceman、Inkling 2 Small 免費檔，Jev 1.13 Free 已下線",
+          "author": "iGetoken",
+          "status": "未核實",
+          "statusClass": "wait",
+          "url": "https://igetoken.com/models/opencode/",
+          "label": "看來源"
+        },
+        {
+          "post": "摩爾線程 AI Coding Plan 限時 30 天免費體驗",
+          "content": "每日限量 100 名，免費體驗 30 天",
+          "author": "賽博雞蛋",
+          "status": "未核實",
+          "statusClass": "wait",
+          "url": "https://saibodan.com/episodes/deals-2026-11-09",
+          "label": "看來源"
+        },
+        {
+          "post": "華為雲碼道每日 1000 萬免費 Token",
+          "content": "登錄即用、當日 0 點清零，僅限碼道內使用",
+          "author": "賽博雞蛋",
+          "status": "未核實",
+          "statusClass": "wait",
+          "url": "https://saibodan.com/episodes/deals-2026-11-09",
+          "label": "看來源"
+        },
+        {
+          "post": "阿里雲百鍊新用戶約 100 萬 Token 免費額度",
+          "content": "新用戶文本模型約 100 萬 Token 免費額度，90 天有效，限華北 2 地域",
+          "author": "賽博雞蛋",
+          "status": "未核實",
+          "statusClass": "wait",
+          "url": "https://saibodan.com/episodes/deals-2026-11-09",
+          "label": "看來源"
+        },
+        {
+          "post": "CapCut Pro 新用戶 7 天免費試用",
+          "content": "桌面版新用戶 7 天免費試用，需綁卡或 PayPal，試用期內取消不扣費",
           "author": "Everysaving",
-          "status": "未核实",
+          "status": "未核實",
           "statusClass": "wait",
           "url": "https://www.everysaving.hk/store/capcut.com",
-          "label": "看来源"
+          "label": "看來源"
         }
       ]
     },

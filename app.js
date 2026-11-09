@@ -50,7 +50,8 @@
           snapHtml += '<tr class="x-empty"><td colspan="5">本小时暂无新热门羊毛帖。</td></tr>';
         } else {
           snap.rows.forEach(function (r) {
-            snapHtml += '<tr><td>' + esc(r.post) + '</td><td>' + esc(r.content) + '</td><td>' + esc(r.author) + '</td><td><span class="tag ' + esc(r.statusClass) + '">' + esc(r.status) + '</span></td><td><a href="' + esc(r.url) + '" target="_blank" rel="noopener">' + esc(r.label) + '</a></td></tr>';
+            var note = r.note ? '<br><span class="bad">' + esc(r.note) + '</span>' : '';
+            snapHtml += '<tr><td>' + esc(r.post) + '</td><td>' + esc(r.content) + note + '</td><td>' + esc(r.author) + '</td><td><span class="tag ' + esc(r.statusClass) + '">' + esc(r.status) + '</span></td><td><a href="' + esc(r.url) + '" target="_blank" rel="noopener">' + esc(r.label) + '</a></td></tr>';
           });
         }
       }
