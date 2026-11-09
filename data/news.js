@@ -1,73 +1,73 @@
 window.SITE_NEWS = {
-  "updated": "2026-11-09 11:31",
+  "updated": "2026-11-09 14:30",
   "items": [
 {
-      "t": "微信鸿蒙版 App 安装量超 9000 万次，华为 HarmonyOS 终端用户数预计本月突破 1 亿大关",
-      "u": "https://www.ithome.com/1/024/099.htm",
+      "t": "微软 CEO 纳德拉畅想：未来可能有 2000 万个 AI 智能体与 20 万名员工协同工作",
+      "u": "https://www.ithome.com/1/024/243.htm",
       "s": "IT之家",
-      "d": "11-09 11:24"
-    },
+      "d": "11-09 14:22"
+},
 {
-      "t": "Tencent's chief AI scientist Yao Shunyu says AI's bio abilities will soon make it \"possible to do harm\" and Anthropic has a \"strong argument\" for closed models (Vincent Chow/South China Morning Post)",
-      "u": "https://www.techmeme.com/261108/p21#a261108p21",
+      "t": "Sources: ByteDance seeks to expand its data center project in Ceara, Brazil, with a second phase larger than its ongoing $10B, 300MW project (Peter Millard/Bloomberg)",
+      "u": "https://www.techmeme.com/261109/p3#a261109p3",
       "s": "Techmeme",
-      "d": "11-09 11:15",
-      "zh": "騰訊首席 AI 科學家姚順雨稱 AI 的生物能力很快將「可能造成傷害」，Anthropic 支持封閉模型「很有道理」"
-    },
+      "d": "11-09 13:50",
+      "zh": "消息稱字節跳動擬擴建巴西塞阿拉數據中心項目，二期規模超過在建的 100 億美元、300MW 項目"
+},
 {
-      "t": "背屏支持心率血氧检测：荣耀 700 系列手机四色官图公布",
-      "u": "https://www.ithome.com/1/024/089.htm",
-      "s": "IT之家",
-      "d": "11-09 11:10"
-    },
-{
-      "t": "Nvidia is investigating Jensen Huang’s relationship with a Chinese spy",
-      "u": "https://www.theverge.com/ai-artificial-intelligence/1029562/nvidia-investigating-jensen-huang-relationship-chinese-spy",
-      "s": "The Verge",
-      "d": "11-09 10:24",
-      "zh": "英偉達正調查黃仁勳與一名中國間諜的關係"
-    },
-{
-      "t": "Job listings show Amazon is building a \"new-to-world\" home robot to operate \"alongside family members\", after its $1,450 Astro reached only a few thousand homes (Annie Palmer/CNBC)",
-      "u": "https://www.techmeme.com/261108/p20#a261108p20",
-      "s": "Techmeme",
-      "d": "11-09 10:20",
-      "zh": "招聘信息顯示亞馬遜正在打造一款全新的家用機器人"
-    },
-{
-      "t": "Unlocking any car from X brand in most of the world",
-      "u": "https://shubs.io/unlocking-any-car-from-x-brand-in-most-of-the-world/",
+      "t": "Apple capped engineers at a $200 daily AI budget",
+      "u": "https://www.stork.ai/newsletter/2026-11-08-apple-capped-engineers-at-a-200-daily-ai-budget#story-1",
       "s": "Hacker News",
-      "d": "11-09 08:10",
-      "zh": "全球大多數某品牌汽車可被解鎖"
-    },
+      "d": "11-09 13:30",
+      "zh": "蘋果給工程師設定每日 200 美元 AI 使用預算上限"
+},
 {
-      "t": "Epic Games Launcher is coming to SteamOS",
-      "u": "https://www.theverge.com/games/1029557/epic-games-launcher-is-coming-to-steamos",
-      "s": "The Verge",
-      "d": "11-09 04:52",
-      "zh": "Epic 遊戲啟動器即將登陸 SteamOS"
-    },
+      "t": "Is Jensen Huang’s job on the line? Yale’s Jeffrey Sonnenfeld estimates it’s “about a 50-50”",
+      "u": "https://techcrunch.com/2026/11/08/is-jensen-huangs-job-on-the-line-yales-jeffrey-sonnenfeld-estimates-its-about-a-50-50/",
+      "s": "TechCrunch",
+      "d": "11-09 13:26",
+      "zh": "黃仁勳職位是否不保？耶魯教授估計「五五開」"
+},
 {
-      "t": "DeepSeek says its open-source agent app Harness hit 1.54M DAUs on November 4, less than three months after launch, and uses ~92T tokens a day, or ~60M per user (Saritha Rai/Bloomberg)",
-      "u": "https://www.techmeme.com/261108/p12#a261108p12",
-      "s": "Techmeme",
-      "d": "11-09 04:10",
-      "zh": "DeepSeek 稱其開源智能體應用 Harness 11 月 4 日日活達 154 萬"
-    },
+      "t": "Trump says AI risks can be managed, signals openness to guardrails - Reuters",
+      "u": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPR0pjQ3BqWnFTMHRZQTVMM0NKR0FIN3RFUnZadVNsY0N5cGV2VkEzeFRtSUhhOEtZLUNyVDBMa05vZDdIS05Qa0s2QUhNWTRJZ3F1OE11SG53RFYtY1pPeWFIQ1d3YTJkNFNyaS11aUJ5UU1zU3pWQ08wNXJ2N2lVajJnblJSLUh4Zks2TTdaaXRVWFpKdEJRMTM3c2hPRy11aXpDTlM3cw?oc=5",
+      "s": "Google News",
+      "d": "11-09 08:29",
+      "zh": "特朗普稱 AI 風險可控，對設立監管護欄持開放態度"
+},
 {
-      "t": "Apple is racing to make Siri more agentic",
-      "u": "https://www.theverge.com/ai-artificial-intelligence/1029552/apple-siri-ai-agentic",
-      "s": "The Verge",
-      "d": "11-09 03:18",
-      "zh": "蘋果正加速讓 Siri 具備更多智能體能力"
-    },
+      "t": "I'm not convinced the AI bubble exists",
+      "u": "https://matteoraso.github.io/im-not-convinced-the-ai-bubble-exists.html#im-not-convinced-the-ai-bubble-exists",
+      "s": "Hacker News",
+      "d": "11-09 07:44",
+      "zh": "我不認為 AI 泡沫存在"
+},
 {
-      "t": "Elvis and Eminem rights holders are suing Suno",
-      "u": "https://www.theverge.com/ai-artificial-intelligence/1029533/elvis-eminem-suno-ai-music-clone-lawsuit",
-      "s": "The Verge",
-      "d": "11-09 01:23",
-      "zh": "貓王與阿姆的版權方正起訴 Suno"
-    }
+      "t": "‘AI clog’: UK public bodies battle onslaught of chatbot-generated complaints - The Guardian",
+      "u": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNOW1WLUp3ZVE4OWpCZFlzazVycDF6bWFRcVdKUE1kZ0lKdW92WEM2UnRLWUtvbTNhTDJUQ2ZLMEpDODZqbE1LbEdseW9TUHNEUUtfdmdaR0ZqRGhiMjNhOXNPTVhGcmlBcGUwbFl2VUtnM3N4SzRGTmZSaEp0R2tCNVNkNFZKMS1UMkRBUVp6Rm13Q1ZuYkhmcEl3UjVrbG9fX1ZRMFNjUjF0VFVUWmI5dVZ1aWMxSGZSUDl4Z1NtUHBzbEMwYnppWWdmczVGQQ?oc=5",
+      "s": "Google News",
+      "d": "11-09 06:51",
+      "zh": "英國公共機構疲於應對聊天機器人生成的海量投訴"
+},
+{
+      "t": "派早报：特斯拉将停产 Cybertruck",
+      "u": "https://sspai.com/post/118805",
+      "s": "少数派",
+      "d": "11-09 06:41"
+},
+{
+      "t": "KetchUp – Open-source SketchUp alternative built with Rust and WebGPU",
+      "u": "https://ketchup3d.github.io/app/",
+      "s": "Hacker News",
+      "d": "11-09 06:35",
+      "zh": "KetchUp——以 Rust 與 WebGPU 打造的開源 SketchUp 替代品"
+},
+{
+      "t": "Coordinated disturbances haunt grids worldwide. Here’s how researchers solved the mystery.",
+      "u": "https://techcrunch.com/2026/11/08/coordinated-disturbances-haunt-grids-worldwide-heres-how-researchers-solved-the-mystery/",
+      "s": "TechCrunch",
+      "d": "11-09 04:30",
+      "zh": "全球電網頻現協同擾動，研究人員破解了謎團"
+}
   ]
 };
