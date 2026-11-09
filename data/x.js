@@ -1,6 +1,39 @@
 window.SITE_X = {
   "news": [
     {
+      "hour": "2026-11-09 12:00",
+      "rows": [
+        {
+          "topic": "Thinking Machines 發布小模型 Inkling 2 Small",
+          "desc": "Mira Murati 創業公司推出公開權重小模型，中國以外同級最高分、價格更低",
+          "time": "11-09",
+          "url": "https://kimkj.com/vi/daily-briefing-vi/?mod=document&uid=21198",
+          "label": "AI 日報摘要"
+        },
+        {
+          "topic": "馬斯克在 X 澄清特斯拉無政府合同",
+          "desc": "中期選舉後股價下跌，他發帖稱特斯拉零政府合同、SpaceX 政府收入不足 10%",
+          "time": "11-09",
+          "url": "https://timesofindia.indiatimes.com/technology/tech-news/as-tesla-and-spacex-stocks-fall-over-democrat-action-fears-elon-musk-makes-a-clarification-tesla-has-no-government-contracts-spacex-has-only-/articleshow/135669030.cms",
+          "label": "印度時報報導"
+        },
+        {
+          "topic": "Claude Code 設定檔外洩 1379 條密鑰",
+          "desc": "Apiiro 掃描 10 萬個公開倉庫，發現 1122 個設定檔含密碼等密鑰",
+          "time": "11-09",
+          "url": "https://ckarch.kr/daily-briefing/ai-tech-briefing-2026-11-09/",
+          "label": "AI 簡報"
+        },
+        {
+          "topic": "xAI Grok API 預設開啟文字浮水印",
+          "desc": "11 月 7 日起 7 款 Grok 模型輸出預設帶隱形浮水印，應對歐盟 AI 法案期限",
+          "time": "11-09",
+          "url": "https://dev.to/hiroki-ii-ai/ai-daily-digest-november-9-2026-mistral-opens-le-chonk-weights-grok-api-watermarks-by-default-2gdm",
+          "label": "AI Daily 摘要"
+        }
+      ]
+    },
+    {
       "hour": "2026-11-09 11:00",
       "rows": [
         {
@@ -131,42 +164,13 @@ window.SITE_X = {
           "label": "看原帖"
         }
       ]
-    },
-    {
-      "hour": "2026-11-09 00:00",
-      "rows": [
-        {
-          "topic": "Anthropic 34 亿美元买燃气发电机组",
-          "desc": "接手 OnePWR 向卡特彼勒订的 1.7GW 发电机组订单，AI 实验室最大一笔发电设备采购",
-          "time": "11-08",
-          "url": "https://www.reuters.com/business/energy/anthropic-secures-34-billion-generator-deal-ai-data-centers-ft-reports-2026-11-08/",
-          "label": "路透报道"
-        },
-        {
-          "topic": "64GB 内存、无 GPU 跑 284B DeepSeek",
-          "desc": "llama-modchip 把 284B MoE 模型压到 59GB 以内，纯 CPU 跑起来",
-          "time": "11-08",
-          "url": "https://github.com/synchopate/llama-modchip",
-          "label": "GitHub 项目"
-        },
-        {
-          "topic": "纳斯达克单日跌 5.5%，AI 泡沫担忧重燃",
-          "desc": "24 小时市值蒸发逾 2.5 万亿美元，市场质疑 AI 资本开支回报周期",
-          "time": "11-08",
-          "url": "https://buttondown.com/ai-daily-mini/archive/ai-daily-2026-11-08/",
-          "label": "AI Daily 日报"
-        },
-        {
-          "topic": "古尔曼：苹果 Siri AI 团队或迎大调整",
-          "desc": "工程副总裁罗克韦尔考虑明年走人；CEO 特努斯敦促软件主管大胆搞 AI",
-          "time": "11-08",
-          "url": "https://www.ithome.com/1/024/014.htm",
-          "label": "IT之家报道"
-        }
-      ]
     }
   ],
   "wool": [
+    {
+      "hour": "2026-11-09 12:00",
+      "rows": []
+    },
     {
       "hour": "2026-11-09 11:00",
       "rows": []
@@ -182,38 +186,6 @@ window.SITE_X = {
     {
       "hour": "2026-11-09 08:00",
       "rows": []
-    },
-    {
-      "hour": "2026-11-09 00:00",
-      "rows": [
-        {
-          "post": "11.3 羊毛合集",
-          "content": "Deepgram 新账号送 $200、Vercel AI Gateway 每月 $5 免费额度、智谱国际站三模型免费不绑卡、Lovable 每天 5 构建点数",
-          "author": "@Jonnyhlkw",
-          "status": "待核实",
-          "statusClass": "wait",
-          "url": "https://x.com/Jonnyhlkw/status/2117433509501702423",
-          "label": "看原帖"
-        },
-        {
-          "post": "WorkBuddy 免费结束",
-          "content": "国际版 DeepSeek-V4.1-Flash 免费到 10 月 31 日，11 月 2 日中午起开始收费",
-          "author": "@Himalayas1989",
-          "status": "免费已结束",
-          "statusClass": "dead",
-          "url": "https://x.com/Himalayas1989/status/2117453030744601055",
-          "label": "看原帖"
-        },
-        {
-          "post": "Grok Bot 免费试用",
-          "content": "xAI 官方宣布 Grok Bot 开放免费试用，限量额度",
-          "author": "@bot",
-          "status": "待核实",
-          "statusClass": "wait",
-          "url": "https://x.com/bot/status/2090852881373311369",
-          "label": "看原帖"
-        }
-      ]
     }
   ]
 };
