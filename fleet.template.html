@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>免费舰队 — 这些免费主机是怎么联动起来做本站的</title>
+<meta name="description" content="本站背后的免费主机舰队：InstaBox、Simular、Kaggle、Cloady、Vortexa 各干什么、实查状态如何，以及它们怎么联动起来采集、核实、生产、发布本站内容。">
+<meta property="og:title" content="免费舰队 — 这些免费主机是怎么联动起来做本站的">
+<meta property="og:description" content="采集、初筛、核实、生产、发布、展示：本站背后的免费主机是这样分工的。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://freenofree.ct.ws/fleet.html">
+<meta property="og:site_name" content="薅羊毛情报站">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://freenofree.ct.ws/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="免费舰队 — 这些免费主机是怎么联动起来做本站的">
+<meta name="twitter:description" content="采集、初筛、核实、生产、发布、展示：本站背后的免费主机是这样分工的。">
+<meta name="twitter:image" content="https://freenofree.ct.ws/og.png">
+<link rel="canonical" href="https://freenofree.ct.ws/fleet.html">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E7%BE%8A%3C/text%3E%3C/svg%3E">
+<meta name="theme-color" content="#111827">
+<script>(function(){try{var s=localStorage.getItem('theme');var t=(s==='light'||s==='dark')?s:(window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t);var m=document.querySelector('meta[name="theme-color"]');if(m)m.setAttribute('content',t==='dark'?'#0f172a':'#111827');}catch(e){}})();</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"免费舰队","url":"https://freenofree.ct.ws/fleet.html","inLanguage":"zh-CN","description":"本站背后的免费主机舰队：各机分工、实查状态与联动流水线。","dateModified":"{{UPDATED_DATE}}"}</script>
+<link rel="stylesheet" href="style.css?v={{STYLEV}}">
+</head>
+<body>
+<button id="theme-toggle" class="theme-toggle" type="button" aria-pressed="false" aria-label="切换到夜间模式"><svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg><svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span class="label-light">夜间模式</span><span class="label-dark">日间模式</span></button>
+<header>
+  <h1>🚢 免费舰队</h1>
+  <p>本站背后的免费主机是怎么联动起来的</p>
+  <p class="hero-sub">没有一台是 24/7 的服务器，也没有一台花了钱。它们各干自己最擅长的一段，拼成一条采集、核实、生产、发布的流水线，本站和三个空间就是出口。</p>
+  <p>最后核查：<span id="last-updated">{{UPDATED}}</span></p>
+  <a class="btn-channel" href="index.html">← 回本站首页</a>
+</header>
+<nav>
+  <a href="index.html">首页</a><a href="#pipeline">流水线</a><a href="#hosts">舰队成员</a><a href="#notes">说明</a>
+</nav>
+<main>
+
+<section id="pipeline" class="cat-cloud">
+<h2>🔗 联动流水线</h2>
+<ol>
+{{PIPELINE}}
+</ol>
+<p class="note">盒子只管搜集，Sai 只出草稿：最终核实、理财数字复核、注册领取都由 Muse 做，核实不过的不会上站。</p>
+</section>
+
+<section id="hosts" class="cat-server">
+<h2>🖥️ 舰队成员 · 实查快照</h2>
+<div class="tw"><table><thead><tr><th>主机</th><th>角色</th><th>规格</th><th>状态</th><th>实查用量 / 情况</th><th>备注</th></tr></thead><tbody>
+{{ROWS}}
+</tbody></table></div>
+<p class="note">上面是 2026-11-10 23:00 左右的实查快照，不是实时数据；免费档的状态随时会变，闲置休眠、额度刷新都是常态。</p>
+</section>
+
+<section id="notes" class="cat-archive">
+<h2>📋 说明</h2>
+<ul>
+<li>全部免费档，没有一台绑卡、没有一台付费；额度用完就等下一周期，不花钱续。</li>
+<li>没有一台能当 24/7 服务器：InstaBox 闲置 30 分钟休眠、Simular 闲置休眠、Kaggle 单次最长 12 小时、Vortexa 面板离线待修。</li>
+<li>本站只写商家与活动的通用信息，不写任何账号、邮箱、订单号与个人领取状态。</li>
+<li>页面数字是实查快照，更新靠每天三轮核验与手工复查，不是自动刷新。</li>
+</ul>
+</section>
+
+</main>
+<footer>
+  内容由 Muse 每天核验更新 · 只推官方可验证的活动<br>
+  本站内容仅供参考，领取前请以官网规则为准<br>
+  频道「<a href="https://www.youtube.com/@freeis.notfree" target="_blank" rel="noopener">免费不免费</a>」· 最后更新 <span class="last-updated">{{UPDATED_DATE}}</span>
+</footer>
+<script>(function(){function apply(t,save){if(t!=='light'&&t!=='dark')t='light';document.documentElement.setAttribute('data-theme',t);var m=document.querySelector('meta[name="theme-color"]');if(m)m.setAttribute('content',t==='dark'?'#0f172a':'#111827');var b=document.getElementById('theme-toggle');if(b){b.setAttribute('aria-pressed',t==='dark'?'true':'false');b.setAttribute('aria-label',t==='dark'?'切换到日间模式':'切换到夜间模式');}if(save){try{localStorage.setItem('theme',t);}catch(e){}}}var b=document.getElementById('theme-toggle');if(b)b.addEventListener('click',function(){apply(document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark',true);});})();</script>
+</body>
+</html>

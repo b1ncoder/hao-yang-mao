@@ -37,6 +37,10 @@ FILES = [
     "style.css",
     "app.js",              # 交互逻辑源码（bundle.js 由它 + 数据文件合成）
     "bundle.js",           # 生成物：数据 + app.js 合一，首页唯一加载的脚本
+    "fleet.html",          # 生成物（build-fleet.py 产出，不要手改）
+    "fleet.template.html", # 舰队页模板（改结构改这里，再跑 build-fleet.py）
+    "build-fleet.py",      # 舰队页构建脚本：data/fleet.js + 模板 -> fleet.html
+    "data/fleet.js",
     "data/news.js",
     "data/x.js",
     "data/sec-pro.js",

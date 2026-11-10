@@ -251,6 +251,7 @@ def main():
     (BASE / "sitemap.xml").write_text(
         '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
         f'  <url><loc>https://freenofree.ct.ws/</loc><lastmod>{updated_date}</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>\n'
+        f'  <url><loc>https://freenofree.ct.ws/fleet.html</loc><lastmod>{updated_date}</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>\n'
         f'  <url><loc>https://freenofree.ct.ws/feed.xml</loc><lastmod>{updated_date}</lastmod><changefreq>daily</changefreq><priority>0.5</priority></url>\n'
         '</urlset>\n', encoding="utf-8")
 
